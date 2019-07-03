@@ -1,0 +1,15 @@
+.table {
+    width: 100%;
+    margin-bottom: 30px;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    &__data,
+    &__header {
+        padding: 10px;
+        border: 1px solid #0f141a;
+        text-align: left;
+    }
+}

@@ -1,0 +1,20 @@
+@import "../helpers/_vars";
+@import "../helpers/_mixins";
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s linear;
+}
+
+input {
+    outline: none;
+    padding: 12px;
+    border-radius: $input-border-radius;
+    border: $input-border-width $input-border-style $input-border-color;
+}

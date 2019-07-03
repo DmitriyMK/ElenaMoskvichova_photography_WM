@@ -1,0 +1,12 @@
+<div id="trigger"></div>
+<header class="header">
+    <div class="wrapper">
+        <a class="header__logo hover-target" href="#">
+            <img src="./img/logo.png" alt="Elena Moskvichova" title="Elena Moskvichova">
+        </a>
+
+        <div class="header__img hover-target">
+            <img class="header__picture" src="../../img/1.png" alt="">
+        </div>
+    </div>
+</header>

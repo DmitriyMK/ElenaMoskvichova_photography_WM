@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> {{ main.web_title }} </title>
+	<meta name="description" content="{{ main.web_description }}">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+	<meta name="msapplication-TileColor" content="#181c25">
+	<meta name="theme-color" content="#181c25">
+
+	<!-- <meta property="og:type" content="website"/> 
+	<meta property="og:image" content="photo-og.jpg">
+	<meta property="og:image:width" content="233">
+	<meta property="og:image:height" content="206">
+	<meta property="og:description" content="">
+	<meta property="og:title" content=""> -->
+
+	<meta name="theme-color" content="#f0f0f0">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://moskvichova.com.ua" />
+	<meta property="fb:app_id" content="198642133889581" />
+	<meta property="og:title" content="{{ main.web_title }}" />
+	<meta property="og:description" content="{{ main.web_description }}" />
+	<meta property="og:image" content="https://moskvichova.com.ua/img/photo/aboutME--og.jpg">
+	<meta property="og:image:width" content="200">
+	<meta property="og:image:height" content="200">
+
+	<link rel="stylesheet" href="./css/header.min.css">
+</head>
+
+<body>

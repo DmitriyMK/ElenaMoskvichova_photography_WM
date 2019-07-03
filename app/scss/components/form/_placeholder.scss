@@ -1,0 +1,40 @@
+@import "../helpers/_vars";
+@import "../helpers/_mixins";
+
+::-webkit-input-placeholder {
+    color: $placeholder-color;
+    transition: opacity 250ms ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+    color: $placeholder-color;
+    transition: opacity 250ms ease-in-out;
+}
+
+:focus:-ms-input-placeholder {
+    opacity: 0.5;
+}
+
+::-moz-placeholder {
+    color: $placeholder-color;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+}
+
+:focus::-moz-placeholder {
+    opacity: 0.5;
+}
+
+:-moz-placeholder {
+    color: $placeholder-color;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+}
+
+:focus:-moz-placeholder {
+    opacity: 0.5;
+}
