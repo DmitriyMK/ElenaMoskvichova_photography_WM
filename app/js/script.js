@@ -1,3 +1,25 @@
+$(document).ready(function () {
+
+  if (document.documentElement.clientWidth > 1200) {
+
+    $(window).enllax();
+
+    $("body").niceScroll({
+      scrollspeed: 70,
+      mousescrollstep: 60,
+      smoothscroll: true,
+      cursorwidth: 5,
+      cursorborder: 0,
+      cursorcolor: '#cd0009',
+      cursorborderradius: 2,
+      autohidemode: true,
+      horizrailenabled: false,
+      zindex: "9999"
+    });
+
+  };
+});
+
 
 // Start Page cursors
 (function($) { "use strict";
@@ -24,6 +46,27 @@
     }
 })(jQuery);
 // End Page cursors
+
+
+// Scroll Go
+let tl = new TimelineMax();
+tl.to('.header__picture', 1.65, { y: -200, scaleX:0.75, rotationX: 20, scaleY:0.75, opacity:0, ease:Linear.easeNone }, 0);
+tl.to('.header__logo img', 1, { y: -70, ease: Power4.easeOut }, 0);
+tl.to('.go', 1.85, { y: -400, ease:Linear.easeNone }, 0);
+
+const controller = new ScrollMagic.Controller();
+const scene = new ScrollMagic.Scene({
+  duration: '600',
+  offset: 80,
+  triggerElement: '#trigger',
+  triggerHook: 0,
+});
+
+
+scene.addIndicators({name: 'Lets Go'});
+scene.setTween(tl);
+scene.addTo(controller);
+// End Scroll Go
 
 
 // Start Reveal effect
@@ -55,25 +98,6 @@ $(function() {
 });
 // End Reveal effect
 
-
-// Scroll Go
-let tl = new TimelineMax();
-tl.to('.header__picture', 1, { y: -90, scaleX:0.85, rotationX: 10, scaleY:0.85, opacity:0.35, ease: Power4.easeOut }, 0);
-tl.to('.header__logo img', 0.85, { y: -70, ease: Power4.easeOut }, 0);
-tl.to('.main', 1.25, { y: -180, ease: Power4.easeOut }, 0);
-
-const controller = new ScrollMagic.Controller();
-const scene = new ScrollMagic.Scene({
-  duration: '800',
-  offset: 0,
-  triggerElement: '#trigger',
-  triggerHook: 0,
-});
-
-scene.addIndicators({name: 'Lets Go'});
-scene.setTween(tl);
-scene.addTo(controller);
-// End Scroll Go
 
 
 window.console.log('Made with fun and love ❤️❤️❤️️ by Dmitriy Moskvichov')

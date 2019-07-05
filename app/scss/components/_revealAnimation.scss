@@ -3,6 +3,10 @@
 
 .reveal {
 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
     &,
     &:after,
     &:before {
@@ -12,7 +16,7 @@
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 
-    &:after {
+    &:before {
         content: "";
         position: absolute;
         z-index: 999;

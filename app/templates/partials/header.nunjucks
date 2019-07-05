@@ -8,5 +8,7 @@
         <div class="header__img hover-target">
             <img class="header__picture" src="../../img/1.png" alt="">
         </div>
+
+        <h1 class="header__title">Phothoteraphie</h1> 
     </div>
 </header>

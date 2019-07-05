@@ -1,15 +1,9 @@
 @import "./helpers/_vars";
 
-html {
-  height: 100%;  
-}
+
 
 .mainwrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100%;
-  overflow: hidden;
+  background: url(../img/bg.png) center center repeat fixed;
 }
 
 .wrapper {
@@ -42,24 +36,3 @@ html {
     padding: 0 15px;
   }
 }
-
-
-
-.main {
-  flex: 1 1 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
-}
-
-
-.section {
-  padding: 80px 0;
-
-  // &__title {
-
-  // }
-}
-
-

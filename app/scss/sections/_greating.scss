@@ -1,0 +1,38 @@
+/* HELPERS */
+@import "./helpers/_vars";
+@import "./helpers/_mixins";
+
+
+
+.greating {
+    margin: 80px 0;
+
+    &__title {
+		padding-top: 20px;
+        padding-bottom: 20px;
+		font-size: rem(42);
+		font-weight: 700;
+		border-bottom: 1px solid $grey-dark;
+    }
+    &__subtitle {
+        position: relative;
+		padding: 20px 0;
+		font-size: rem(20);
+		font-weight: 700;
+		z-index: 1;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -1px;
+			height: 3px;
+			width: 50%;
+			background: #bc956a;
+		}
+    }
+
+    &__text {
+        padding-bottom: 20px;
+        font-size: rem(20);
+    }
+}
