@@ -2,7 +2,7 @@
 @import "./helpers/_mixins";
 
 body {
-	position: relative; 
+	position: relative;
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -14,38 +14,38 @@ body {
 	line-height: 1.2;
 	background: #000;
 	color: #fafafa;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	overflow-x: hidden;
-  	overflow-y: scroll;
-	
+	overflow-y: scroll;
+
 	overflow-wrap: break-word;
-  	word-wrap: break-word;
+	word-wrap: break-word;
 	hyphens: auto;
 	text-size-adjust: none;
 	text-rendering: optimizeLegibility;
 	-webkit-overflow-scrolling: touch;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scroll-behavior: smooth;
 
-    &::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        background-color: #F5F5F5;
-    }
-    &::-webkit-scrollbar {
-        width: 6px;
-    }
-    &::-webkit-scrollbar-thumb {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        background-color: $grey-dark;
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		background-color: #F5F5F5;
 	}
-	
-	
+
+	&::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+		background-color: $grey-dark;
+	}
 }
 
 
 *::selection {
-    background-color: #fafafa;
-    color: $grey-dark;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fafafa;
 }
