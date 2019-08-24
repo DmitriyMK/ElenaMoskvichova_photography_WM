@@ -24,252 +24,224 @@
 		<img class="carousel__img" src="./img/photo/0carousel/5_2560.jpg" alt="Фотограф - Елена Москвичева">
 	</picture> -->
 
-<!-- <a href="/" class="logo_link" aria-label="Go to the home page">
-	<img width="100" src="me.jpg" alt="" aria-describedby="logo-description" class="logo__img" />
-	</a> -->
+<div id="trigger"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor2" id="cursor2"></div>
+
+<div class="viewport">
 
 
+<aside class="sidebar">
+	<nav class="sidebar__nav">
+		<a class="sidebar__logo hover-target" href="./index.html">
+			<img src="../img/icons/camera.svg" alt="Elena Moskvichova" title="Elena Moskvichova">
+		</a>
 
-<!-- <div class="remodal formBox" data-remodal-id="cooperate">
-			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-			<form class="form form-validate" name="cooperate">
+		<ul class="sidebar__list">
+			<li class="sidebar__item hover-target">
+				<a href="#">
+							Références
+						</a>
+			</li>
 
-				<input type="hidden" name="project_name" value="">
-				<input type="hidden" name="admin_email" value="">
-				<input type="hidden" name="form_subject" value="">
+			<li class="sidebar__item hover-target">
+				<a href="#">
+							Portfolio
+						</a>
+			</li>
 
+			<li class="sidebar__item hover-target">
+				<a href="#">
+							Contact
+						</a>
+			</li>
 
-				<p class="form__title">Заполните форму</p>
-				<p class="form__text">И наш менеджер свяжется с Вами <br> в ближайшее время</p>
+			<li class="sidebar__item hover-target">
+				<a href="#">
+							Contact
+						</a>
+			</li>
+		</ul>
 
-				<input class="form__line name" type="text" name="Имя&nbsp;покупателя" placeholder="Ваше имя" required>
-
-				<input class="btn" type="submit" value="Узнать условия">
-			</form>
-		</div> -->
-
-
-<!-- <div class="remodal remodal-common" data-remodal-id="modal-thanks">
-			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-			<p class="thanks__title">Благодарим Вас!</p>
-			<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
-		</div> -->
-
-
-
-
-<div class="mainwrap">
-	{% include "header.nunjucks" %}
-
-
-	<aside class="sidebar">
-		<nav class="sidebar__nav">
-			<a class="sidebar__logo hover-target" href="./index.html">
-				<img src="./img/logo.png" alt="Logo" title="Logo">
-			</a>
-
-
-			<ul class="sidebar__list">
-				<li class="sidebar__item hover-target">
-					<a href="#">
-						Références
+		<ul class="sidebar__smm">
+			<ul>
+				<li class="hover-target">
+					<a href="http://" target="_blank" rel="noopener noreferrer">
+						<svg>
+							<use xlink:href="../img/icons/sprite/sprite.svg#instagram"></use>
+						</svg>
 					</a>
 				</li>
-
-				<li class="sidebar__item hover-target">
-					<a href="#">
-						Portfolio
+				<li class="hover-target">
+					<a href="http://" target="_blank" rel="noopener noreferrer">
+						<svg>
+							<use xlink:href="../img/icons/sprite/sprite.svg#facebook"></use>
+						</svg>
 					</a>
 				</li>
-
-				<li class="sidebar__item hover-target">
-					<a href="#">
-						Contact
-					</a>
-				</li>
-
-				<li class="sidebar__item hover-target">
-					<a href="#">
-						Contact
+				<li class="hover-target">
+					<a href="http://" target="_blank" rel="noopener noreferrer">
+						<svg>
+							<use xlink:href="../img/icons/sprite/sprite.svg#telegram"></use>
+						</svg>
 					</a>
 				</li>
 			</ul>
+	</ul>
+</nav>
+</aside>
 
 
-			<ul class="sidebar__smm">
-				<ul>
-					<li class="hover-target">
-						<a href="http://" target="_blank" rel="noopener noreferrer">
-							<svg>
-								<use xlink:href="../img/icons/sprite/sprite.svg#facebook "></use>
-							</svg>
-						</a>
-					</li>
-					<li class="hover-target">
-						<a href="http://" target="_blank" rel="noopener noreferrer">
-							<svg>
-								<use xlink:href="../img/icons/sprite/sprite.svg#instagram "></use>
-							</svg>
-						</a>
-					</li>
-					<li class="hover-target">
-						<a href="http://" target="_blank" rel="noopener noreferrer">
-							<svg>
-								<use xlink:href="../img/icons/sprite/sprite.svg#telegram "></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</ul>
-		</nav>
-	</aside>
+<div id="scroll-container" class="scroll-container">
+	<main class="main content" id="scroll-container">
+		<div data-scroll>
+			
+			{% include "header.nunjucks" %}
 
+			<section class="greating go">
+				<div class="wrapper">
 
-	<main class="main">
-		<section class="greating go">
-			<div class="wrapper">
+					<div class="greating__box">
+						<h1 class="greating__title">Overall Outcomes</h1>
+						<h2 class="greating__subtitle">Better Customer Experience</h2>
 
-				<div class="greating__box">
-					<h1 class="greating__title">Overall Outcomes</h1>
-					<h2 class="greating__subtitle">Better Customer Experience</h2>
+						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+							Molestias
+							tenetur dolorum, eum dolor odit itaque minus repellat?
+						</p>
 
-					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-						Molestias
-						tenetur dolorum, eum dolor odit itaque minus repellat?
-					</p>
+						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+							Molestias
+							tenetur dolorum, eum dolor odit itaque minus repellat?
+						</p>
 
-					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-						Molestias
-						tenetur dolorum, eum dolor odit itaque minus repellat?
-					</p>
+						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+							Molestias
+							tenetur dolorum, eum dolor odit itaque minus repellat?
+						</p>
+					</div>
 
-
-					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-						Molestias
-						tenetur dolorum, eum dolor odit itaque minus repellat?
-					</p>
 				</div>
+			</section>
 
-			</div>
-		</section>
+			<section class="photo go">
+				<div class="wrapper">
 
-
-		<section class="photo go">
-			<div class="wrapper">
-
-				<div class="photo__box">
-					<figure class="photo__item hover-target" data-enllax-ratio="-0.055" data-enllax-type="foreground"
-						data-enllax-direction="vertical">
-						<img class="photo__img" alt=""
-							src="https://www.christopher-ware.com/CW_new/img/work/mf/mf_work6.png">
-					</figure>
+					<div class="photo__box">
+						<figure class="photo__item hover-target">
+							<a class="photo__link" href="">
+								<img class="photo__img" alt="" src="../img/photo/alexandra/photo001.jpg">
+							</a>
+						</figure>
 
 
-					<figure class="photo__item hover-target" data-enllax-ratio="-0.095" data-enllax-type="foreground"
-						data-enllax-direction="vertical">
-						<img class="photo__img" alt=""
-							src="https://www.christopher-ware.com/CW_new/img/work/mf/mf_work6.png">
-					</figure>
+						<figure class="photo__item hover-target">
+							<a class="photo__link" href="">
+								<img class="photo__img" alt="" src="../img/photo/alexandra/photo002.jpg">
+							</a>
+						</figure>
 
 
-					<figure class="photo__item hover-target" data-enllax-ratio="-0.175" data-enllax-type="foreground"
-						data-enllax-direction="vertical">
-						<img class="photo__img" alt=""
-							src="https://www.christopher-ware.com/CW_new/img/work/mf/mf_work6.png">
-					</figure>
+						<figure class="photo__item hover-target">
+							<a class="photo__link" href="">
+								<img class="photo__img" alt="" src="../img/photo/alexandra/photo003.jpg">
+							</a>
+						</figure>
 
 
-					<figure class="photo__item hover-target" data-enllax-ratio="-0.135" data-enllax-type="foreground"
-						data-enllax-direction="vertical">
-						<img class="photo__img" alt=""
-							src="https://www.christopher-ware.com/CW_new/img/work/mf/mf_work6.png">
-					</figure>
-
-
-					<figure class="photo__item hover-target" data-enllax-ratio="-0.185" data-enllax-type="foreground"
-						data-enllax-direction="vertical">
-						<img class="photo__img" alt=""
-							src="https://www.christopher-ware.com/CW_new/img/work/mf/mf_work6.png">
-					</figure>
-
-
-					<figure class="photo__item hover-target" data-enllax-ratio="-0.095" data-enllax-type="foreground"
-						data-enllax-direction="vertical">
-						<img class="photo__img" alt=""
-							src="https://www.christopher-ware.com/CW_new/img/work/mf/mf_work6.png">
-					</figure>
+						<figure class="photo__item hover-target">
+							<a class="photo__link" href="">
+								<img class="photo__img" alt="" src="../img/photo/alexandra/photo004.jpg">
+							</a>
+						</figure>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
+			<section class="greating go">
+				<div class="wrapper">
 
-		<section class="greating go">
-			<div class="wrapper">
+					<div class="greating__box">
+						<h1 class="greating__title">Overall Outcomes</h1>
+						<h2 class="greating__subtitle">Better Customer Experience</h2>
 
-				<div class="greating__box">
-					<h1 class="greating__title">Overall Outcomes</h1>
-					<h2 class="greating__subtitle">Better Customer Experience</h2>
+						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+							Molestias
+							tenetur dolorum, eum dolor odit itaque minus repellat?
+						</p>
 
-					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-						Molestias
-						tenetur dolorum, eum dolor odit itaque minus repellat?
-					</p>
+						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+							Molestias
+							tenetur dolorum, eum dolor odit itaque minus repellat?
+						</p>
 
-					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-						Molestias
-						tenetur dolorum, eum dolor odit itaque minus repellat?
-					</p>
+						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+							Molestias
+							tenetur dolorum, eum dolor odit itaque minus repellat?
+						</p>
+					</div>
 
-
-					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-						Molestias
-						tenetur dolorum, eum dolor odit itaque minus repellat?
-					</p>
 				</div>
+			</section>
 
-			</div>
-		</section>
+			{% include "footer.nunjucks" %}
+		</div>
 	</main>
+	
 
 
-	{% include "footer.nunjucks" %}
+	<div class="remodal formBox" data-remodal-id="callback">
+	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+	<form class="form form-validate" name="callback">
+
+		<input type="hidden" name="project_name" value="">
+		<input type="hidden" name="admin_email" value="">
+		<input type="hidden" name="form_subject" value="">
+
+		<p class="form__title">Залишились питання?</p>
+		<p class="form__text">Ми перетелефонуємо та відповімо на них.</p>
+
+		<input class="form__line name" type="text" name="name" placeholder="name" required>
+		<input class="form__line phone-mask" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+		<input class="btn btn-green" type="submit" value="Замовити дзвінок">
+	</form>
+	</div>
 
 
-
-	<div class="cursor" id="cursor"></div>
-	<div class="cursor2" id="cursor2"></div>
-</div>
-
+	<div class="remodal remodal-common" data-remodal-id="modal-thanks">
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<p class="thanks__title">Благодарим Вас!</p>
+		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
+	</div>
 
 
 <link rel="stylesheet" href="./css/main.min.css">
 
 
-<script src="./js/libs/jquery-3.3.1.min.js"></script>
-
-
-<script src="./js/libs/TweenMax.min.js"></script>
+<script src="../js/libs/jquery-3.3.1.min.js"></script>
+<script src="../js/libs/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js"></script>
-<script src="./js/libs/jquery.nicescroll.min.js"></script>
-<script src="./js/libs/jquery.enllax.min.js"></script>
+
+<script src="../js/libs/remodal.min.js"></script>
+<script scr="../js/libs/rellax.min.js"></script>
 
 
-
-<!-- <script src="./js/libs/imagesloaded.pkgd.min.js"></script> -->
-
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js"></script>
+<script src="../js/libs/jquery.enllax.min.js"></script>
+<script scr="../js/libs/rellax.min.js"></script>
+-->
 
 <script src="./js/libs/blazy.js"></script>
 
 <script src="./js/script.min.js"></script>
 <script src="./js/script.js"></script>
-
 {% include "templateEnd.nunjucks" %}

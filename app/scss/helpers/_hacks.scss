@@ -13,6 +13,24 @@
 
 /* ONLY FOR IE11 */
 @media all and (-ms-high-contrast:none) {
+
+	.viewport {
+		position: static;
+		height: 100%;
+		width: 100%;
+		top: inherit;
+		left: inherit;
+		right: inherit;
+		bottom: inherit;
+	  }
+	  
+	  .scroll-container {  
+		position: static;  
+	  }
+	  
+	  .content {
+		width: 100vw; 
+	  }
 	
 }
 

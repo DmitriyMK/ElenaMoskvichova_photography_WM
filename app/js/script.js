@@ -1,23 +1,97 @@
 $(document).ready(function () {
 
-  if (document.documentElement.clientWidth > 1200) {
+  if (document.documentElement.clientWidth > 1024) {
 
-    $(window).enllax();
+    // $(window).enllax();
 
-    $("body").niceScroll({
-      scrollspeed: 70,
-      mousescrollstep: 60,
-      smoothscroll: true,
-      cursorwidth: 5,
-      cursorborder: 0,
-      cursorcolor: '#cd0009',
-      cursorborderradius: 2,
-      autohidemode: true,
-      horizrailenabled: false,
-      zindex: "9999"
-    });
+    var isIE = false;
+    var ua = window.navigator.userAgent;
+    var old_ie = ua.indexOf('MSIE ');
+    var new_ie = ua.indexOf('Trident/');
+
+    if ((old_ie > -1) || (new_ie > -1)) {
+      isIE = true;
+    }
+
+    if (!isIE) {
+
+
+      var html = document.documentElement;
+      var body = document.body;
+
+      var scroller = {
+        target: document.querySelector("#scroll-container"),
+        ease: 0.05, // <= scroll speed
+        endY: 0,
+        y: 0,
+        resizeRequest: 1,
+        scrollRequest: 0,
+      };
+
+      var requestId = null;
+
+      TweenLite.set(scroller.target, {
+        rotation: 0.01,
+        force3D: true
+      });
+
+      window.addEventListener("load", onLoad);
+
+      function onLoad() {
+        updateScroller();
+        window.focus();
+        window.addEventListener("resize", onResize);
+        document.addEventListener("scroll", onScroll);
+      }
+
+      function updateScroller() {
+
+
+        var resized = scroller.resizeRequest > 0;
+
+        if (resized) {
+          var height = scroller.target.clientHeight;
+          body.style.height = height + "px";
+          scroller.resizeRequest = 0;
+        }
+
+        var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+
+        scroller.endY = scrollY;
+        scroller.y += (scrollY - scroller.y) * scroller.ease;
+
+        if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+          scroller.y = scrollY;
+          scroller.scrollRequest = 0;
+        }
+
+        TweenLite.set(scroller.target, {
+          y: -scroller.y
+        });
+
+        requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+      }
+
+      function onScroll() {
+        scroller.scrollRequest++;
+        if (!requestId) {
+          requestId = requestAnimationFrame(updateScroller);
+        }
+      }
+
+      function onResize() {
+        scroller.resizeRequest++;
+        if (!requestId) {
+          requestId = requestAnimationFrame(updateScroller);
+        }
+      }
+    }
+
+
+
 
   };
+
 });
 
 
@@ -56,7 +130,7 @@ $(document).ready(function () {
 // Scroll Go
 let tl = new TimelineMax();
 tl.to('.header__picture', 1.65, {y: -200, scaleX: 0.75, rotationX: 20, scaleY: 0.75, opacity: 0, ease: Linear.easeNone}, 0);
-tl.to('.header__logo img', 1, {y: -70, ease: Power4.easeOut}, 0);
+tl.to('.header__logo', 1, {y: -70, ease: Power4.easeOut}, 0);
 tl.to('.go', 1.85, {y: -400, ease: Linear.easeNone}, 0);
 
 const controller = new ScrollMagic.Controller();
@@ -108,5 +182,3 @@ $(function () {
 
 
 window.console.log('Made with fun and love ❤️❤️❤️️ by Dmitriy Moskvichov')
-
-const g = 23;

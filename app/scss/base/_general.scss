@@ -46,6 +46,60 @@ body {
 
 
 *::selection {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: #fafafa;
 	color: #fafafa;
+}
+
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+
+.viewport {
+	// overflow: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.scroll-container {
+	position: absolute;
+	overflow: hidden;
+	z-index: 10;
+
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+}
+
+.content {
+	width: 100vw;
+}
+
+
+[data-scroll] {
+	will-change: transform;
+}
+
+.btn {
+	padding: 10px 30px;
+	font-family: $ff1;
+	font-size: 16px;
+	font-weight: 700;
+	background: transparent;
+	border: 1px solid #999;
+	color: #999;
+	text-transform: uppercase;
+	outline: none;
+	transition: border .25s ease-out, color .25s ease-out;
+	
+	&:hover {
+		border-color: #fafafa;
+		color: #fafafa;
+	}
 }

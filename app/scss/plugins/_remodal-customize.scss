@@ -1,5 +1,5 @@
 .remodal-wrapper {
-    background: rgba(10, 159, 158, 0.8) !important;
+    background: rgba(#454546, 0.8) !important;
 }
 
 
@@ -10,7 +10,7 @@
 
     &:before {
         font-size: 36px;
-        color: red;
+        color: #666;
     }
 }
 
@@ -21,22 +21,58 @@
 
     .form {
         position: relative;
-        padding: 30px 15px;
+        padding: 30px 0;
         margin: 20px auto;
-        background: #3b3b3d;
+        background: #fafafa;
 
         &__title {
-
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.4;
+            font-weight: 700;
+            color: #515252;
+            text-transform: uppercase;
         }
+
         &__text {
-
+            padding-bottom: 8px;
+            font-size: 17px;
+            font-weight: 300;
         }
+
         &__line {
             display: block;
-            margin: 15px auto;
-        }
-        &__btn {
+            margin: 20px auto;
 
+            width: 265px;
+            padding: 0 10px;
+            line-height: 48px;
+            font-family: $ff1;
+            font-size: 16px;
+            font-weight: 300;
+            color: #a7a7a7;
+            transition: border-color .25s ease-in;
+            border: 1px solid #969696;
+            outline: none;
+
+            &:active,
+            &:focus {
+                border-color: darken($color: #c1dddd, $amount: 40%);
+            }
+
+            &:hover {
+                border-color: darken($color: #c1dddd, $amount: 20%);
+            }
+        }
+
+        .btn {
+            font-family: $ff1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            padding: 14px 10px;
+            width: 265px;
         }
     }
 }
@@ -49,7 +85,23 @@
     padding: 30px;
     max-width: 300px;
 }
+
 .remodal-common .remodal-close:before {
-    top: -30px!important; 
-    left: 0px!important;
+    top: -30px !important;
+    left: 0px !important;
+}
+
+.thanks__title {
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #515252;
+    text-transform: uppercase;
+}
+
+.thanks__text {
+    display: block;
+    padding-bottom: 15px;
+    padding-left: 0;
+    font-size: 17px;
 }
