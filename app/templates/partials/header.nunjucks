@@ -3,7 +3,7 @@
     <div class="wrapper">
         <div class="header__logo hover-target" >
             <a href="index.html"  aria-label="Go to the home page">
-                <img src="../img/icons/camera.svg" alt="Elena Moskvichova" title="Elena Moskvichova" aria-describedby="logo-description">
+                <img src="../img/icons/camera.svg" alt="Elena Moskvichova" title="Elena Moskvichova">
                 <h1>Elena Moskvichova <br> photographer</h1>
             </a>
 

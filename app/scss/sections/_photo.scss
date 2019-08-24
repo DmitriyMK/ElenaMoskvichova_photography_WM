@@ -19,6 +19,7 @@
 		overflow: hidden;
 		filter: blur(10px);
 		opacity: 0;
+		object-fit: cover;
 
 		&:nth-of-type(even) {
 			margin-top: 145px;
