@@ -86,11 +86,29 @@ $(document).ready(function () {
         }
       }
     }
+    
 
 
   };
 
 });
+
+
+var image = document.getElementsByClassName('photo__img-big');
+new simpleParallax(image, {
+  delay: .55,
+  scale: 1.35,
+	// transition: 'cubic-bezier(0,0,0,1)'
+});
+
+
+var image2 = document.getElementsByClassName('photo__img-small');
+new simpleParallax(image2, {
+  delay: 1.5,
+  scale: 1.15,
+	// transition: 'cubic-bezier(0,0,0,1)'
+});
+
 
 
 // Start Page cursors

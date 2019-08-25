@@ -1,13 +1,5 @@
 {% include "templateStart.nunjucks" %}
 
-<!-- <img class="b-lazy portfolio__img" data-src="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" title=""> -->
-
-<!-- <picture>
-		<source media="(max-width: 767px)" srcset="">
-		<source media="(min-width: 768px)" srcset="">
-		<img src="" alt role="presentation">
-	</picture> -->
-
 <!-- <picture>
 		<source type="image/webp" media="(max-width:768px)" srcset="./img/photo/0carousel/5_768.webp">
 		<source type="image/jpg" media="(max-width:768px)" srcset="./img/photo/0carousel/5_768.jpg">
@@ -31,68 +23,12 @@
 <div class="viewport">
 
 
-<aside class="sidebar">
-	<nav class="sidebar__nav">
-		<a class="sidebar__logo hover-target" href="./index.html">
-			<img src="../img/icons/camera.svg" alt="Elena Moskvichova" title="Elena Moskvichova">
-		</a>
-
-		<ul class="sidebar__list">
-			<li class="sidebar__item hover-target">
-				<a href="#">
-							Références
-						</a>
-			</li>
-
-			<li class="sidebar__item hover-target">
-				<a href="#">
-							Portfolio
-						</a>
-			</li>
-
-			<li class="sidebar__item hover-target">
-				<a href="#">
-							Contact
-						</a>
-			</li>
-
-			<li class="sidebar__item hover-target">
-				<a href="#">
-							Contact
-						</a>
-			</li>
-		</ul>
-
-		<ul class="sidebar__smm">
-			<li class="hover-target">
-				<a href="" target="_blank" rel="noopener noreferrer">
-					<svg>
-						<use xlink:href="../img/icons/sprite/sprite.svg#instagram"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="hover-target">
-				<a href="" target="_blank" rel="noopener noreferrer">
-					<svg>
-						<use xlink:href="../img/icons/sprite/sprite.svg#facebook"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="hover-target">
-				<a href="" target="_blank" rel="noopener noreferrer">
-					<svg>
-						<use xlink:href="../img/icons/sprite/sprite.svg#telegram"></use>
-					</svg>
-				</a>
-			</li>
-		</ul>
-</nav>
-</aside>
+{% include "aside.nunjucks" %}
 
 
 <div>
 	<main class="main content" id="scroll-container">
-		<div data-scroll>
+		<div>
 			
 			{% include "header.nunjucks" %}
 
@@ -132,29 +68,29 @@
 
 					<div class="photo__box">
 						<figure class="photo__item hover-target">
-							<a class="photo__link" href="">
-								<img class="photo__img" alt="" src="../img/photo/alexandra/photo001.jpg">
+							<a class="photo__link" href="../page1.html">
+								<img class="photo__img photo__img-big" alt="" src="../img/photo/alexandra/photo001.jpg">
 							</a>
 						</figure>
 
 
 						<figure class="photo__item hover-target">
-							<a class="photo__link" href="">
-								<img class="photo__img" alt="" src="../img/photo/alexandra/photo002.jpg">
+							<a class="photo__link" href="../page1.html">
+								<img class="photo__img photo__img-small" alt="" src="../img/photo/alexandra/photo002.jpg">
 							</a>
 						</figure>
 
 
 						<figure class="photo__item hover-target">
-							<a class="photo__link" href="">
-								<img class="photo__img" alt="" src="../img/photo/alexandra/photo003.jpg">
+							<a class="photo__link" href="../page1.html">
+								<img class="photo__img photo__img-small" alt="" src="../img/photo/alexandra/photo003.jpg">
 							</a>
 						</figure>
 
 
 						<figure class="photo__item hover-target">
-							<a class="photo__link" href="">
-								<img class="photo__img" alt="" src="../img/photo/alexandra/photo004.jpg">
+							<a class="photo__link" href="../page1.html">
+								<img class="photo__img photo__img-big" alt="" src="../img/photo/alexandra/photo004.jpg">
 							</a>
 						</figure>
 					</div>
@@ -196,31 +132,7 @@
 	</main>
 	
 
-
-	<div class="remodal formBox" data-remodal-id="callback">
-	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-	<form class="form form-validate" name="callback">
-
-		<input type="hidden" name="project_name" value="">
-		<input type="hidden" name="admin_email" value="">
-		<input type="hidden" name="form_subject" value="">
-
-		<p class="form__title">Залишились питання?</p>
-		<p class="form__text">Ми перетелефонуємо та відповімо на них.</p>
-
-		<input class="form__line name" type="text" name="name" placeholder="name" required>
-		<input class="form__line phone-mask" type="tel" name="phone" placeholder="Ваш телефон" required>
-
-		<input class="btn btn-green" type="submit" value="Замовити дзвінок">
-	</form>
-	</div>
-
-
-	<div class="remodal remodal-common" data-remodal-id="modal-thanks">
-		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-		<p class="thanks__title">Благодарим Вас!</p>
-		<p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
-	</div>
+	{% include "form.nunjucks" %}
 
 
 <link rel="stylesheet" href="./css/main.min.css">
@@ -228,6 +140,7 @@
 
 <script src="../js/libs/jquery-3.3.1.min.js"></script>
 <script src="../js/libs/TweenMax.min.js"></script>
+<script src="../js/libs/simpleParallax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>

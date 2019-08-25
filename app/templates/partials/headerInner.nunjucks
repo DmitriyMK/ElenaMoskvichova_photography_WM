@@ -1,0 +1,17 @@
+
+<header class="header">
+    <div class="wrapper">
+        <div class="header__logo hover-target" >
+            <a href="index.html"  aria-label="Go to the home page">
+                <img src="../img/icons/camera.svg" alt="Elena Moskvichova" title="Elena Moskvichova">
+                <h1>Elena Moskvichova <br> photographer</h1>
+            </a>
+
+            <div class="contact">
+                <a href="tel:+380664003496">+38 066 400 34 96</a>
+                <button class="btn" data-remodal-target="callback">Hire me</button>
+            </div>
+            
+        </div>
+    </div>
+</header>

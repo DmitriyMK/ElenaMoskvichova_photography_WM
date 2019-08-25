@@ -1,0 +1,24 @@
+<div class="remodal formBox" data-remodal-id="callback">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <form class="form form-validate" name="callback">
+
+        <input type="hidden" name="project_name" value="">
+        <input type="hidden" name="admin_email" value="">
+        <input type="hidden" name="form_subject" value="">
+
+        <p class="form__title">Залишились питання?</p>
+        <p class="form__text">Ми перетелефонуємо та відповімо на них.</p>
+
+        <input class="form__line name" type="text" name="name" placeholder="name" required>
+        <input class="form__line phone-mask" type="tel" name="phone" placeholder="Ваш телефон" required>
+
+        <input class="btn btn-green" type="submit" value="Замовити дзвінок">
+    </form>
+</div>
+
+
+<div class="remodal remodal-common" data-remodal-id="modal-thanks">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <p class="thanks__title">Благодарим Вас!</p>
+    <p class="thanks__text">Мы свяжемся с Вами <br>в ближайшее время.</p>
+</div>

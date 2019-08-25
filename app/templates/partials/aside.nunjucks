@@ -1,0 +1,57 @@
+<aside class="sidebar">
+    <nav class="sidebar__nav">
+        <a class="sidebar__logo hover-target" href="./index.html">
+            <img src="../img/icons/camera.svg" alt="Elena Moskvichova" title="Elena Moskvichova">
+        </a>
+
+        <ul class="sidebar__list">
+            <li class="sidebar__item hover-target">
+                <a href="#">
+					Références
+				</a>
+            </li>
+
+            <li class="sidebar__item hover-target">
+                <a href="#">
+					Portfolio
+				</a>
+            </li>
+
+            <li class="sidebar__item hover-target">
+                <a href="#">
+					Contact
+				</a>
+            </li>
+
+            <li class="sidebar__item hover-target">
+                <a href="#">
+					Contact
+				</a>
+            </li>
+        </ul>
+
+        <ul class="sidebar__smm">
+            <li class="hover-target">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <svg>
+                        <use xlink:href="../img/icons/sprite/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="hover-target">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <svg>
+                        <use xlink:href="../img/icons/sprite/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="hover-target">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <svg>
+                        <use xlink:href="../img/icons/sprite/sprite.svg#telegram"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>

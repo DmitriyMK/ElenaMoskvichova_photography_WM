@@ -8,12 +8,10 @@
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		margin: 80px 0;
+		margin: 60px 0;
 	}
 	&__item {
 		position: relative;
-		margin-top: 50px;
-		margin-bottom: 50px;
 		max-width: 620px;
 		flex-basis: 50%;
 		overflow: hidden;
@@ -22,7 +20,7 @@
 		object-fit: cover;
 
 		&:nth-of-type(even) {
-			margin-top: 145px;
+			margin-top: 350px;
 		}
 
 
