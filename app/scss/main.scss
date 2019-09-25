@@ -9,25 +9,21 @@
 @import "./sections/_photo.scss";
 @import "./sections/_photoInner.scss";
 @import "./sections/_footer.scss";
-
-
 @import "./components/_revealAnimation";
 
- 
+
 
 .photoInner {
-
-
     &__item {
         margin-bottom: 30px;
-        max-width: 100%;
-        width: 100%;
+        max-width    : 100%;
+        width        : 100%;
     }
 
     &__img {
-        display: block;
+        display  : block;
         max-width: 100%;
-        height: auto;
+        height   : auto;
     }
 }
 
@@ -36,9 +32,15 @@
 
 
 @media (max-width: $desktop-xl) {}
+
 @media (max-width: $desktop) {}
+
 @media (max-width: $laptop) {}
+
 @media (max-width: $tablet) {}
+
 @media (max-width: $note) {}
+
 @media (max-width: $phone-xl) {}
+
 @media (max-width: $phone) {}

@@ -13,6 +13,7 @@ $(document).ready(function () {
       isIE = true;
     }
 
+
     if (!isIE) {
 
 
@@ -86,27 +87,27 @@ $(document).ready(function () {
         }
       }
     }
-    
 
 
+    if (!isIE) {
+      var image = document.getElementsByClassName('photo__img-big');
+      new simpleParallax(image, {
+        delay: .55,
+        scale: 1.35,
+        // transition: 'cubic-bezier(0,0,0,1)'
+      });
+
+
+      var image2 = document.getElementsByClassName('photo__img-small');
+      new simpleParallax(image2, {
+        delay: 1.5,
+        scale: 1.15,
+        // transition: 'cubic-bezier(0,0,0,1)'
+      });
+
+    }
   };
 
-});
-
-
-var image = document.getElementsByClassName('photo__img-big');
-new simpleParallax(image, {
-  delay: .55,
-  scale: 1.35,
-	// transition: 'cubic-bezier(0,0,0,1)'
-});
-
-
-var image2 = document.getElementsByClassName('photo__img-small');
-new simpleParallax(image2, {
-  delay: 1.5,
-  scale: 1.15,
-	// transition: 'cubic-bezier(0,0,0,1)'
 });
 
 
@@ -145,9 +146,9 @@ new simpleParallax(image2, {
 
 // Scroll Go
 let tl = new TimelineMax();
-tl.to('.header__picture', 1.65, {y: -200, scaleX: 0.75, rotationX: 20, scaleY: 0.75, opacity: 0, ease: Linear.easeNone}, 0);
-tl.to('.header__logo', 1, {y: -70, ease: Power4.easeOut}, 0);
-tl.to('.go', 1.85, {y: -400, ease: Linear.easeNone}, 0);
+tl.to('.header__picture', 1.65, { y: -200, scaleX: 0.75, rotationX: 20, scaleY: 0.75, opacity: 0, ease: Linear.easeNone }, 0);
+tl.to('.header__logo', 1, { y: -70, ease: Power4.easeOut }, 0);
+tl.to('.go', 1.85, { y: -400, ease: Linear.easeNone }, 0);
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
@@ -158,9 +159,9 @@ const scene = new ScrollMagic.Scene({
 });
 
 
-scene.addIndicators({
-  name: 'Lets Go'
-});
+// scene.addIndicators({
+//   name: 'Lets Go'
+// });
 scene.setTween(tl);
 scene.addTo(controller);
 // End Scroll Go
@@ -195,6 +196,7 @@ $(function () {
 });
 // End Reveal effect
 
+$('.phone-mask').mask('+38(999)999-99-99');
 
 
 window.console.log('Made with fun and love ❤️❤️❤️️ by Dmitriy Moskvichov')
