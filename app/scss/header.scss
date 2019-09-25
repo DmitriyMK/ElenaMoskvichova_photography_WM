@@ -9,9 +9,8 @@
 
 
 // COMPONENTS
-@import "./components/_cursor";
-
-// @import "./components/_scrollUp";
+// @import "./components/_cursor";
+@import "./components/_scrollUp";
 
 
 
@@ -45,61 +44,62 @@
 	}
 
 	&__logo {
-		display: flex;
+		display        : flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items    : center;
 
-		> a {
-			display: flex;
+		>a {
+			display    : flex;
 			align-items: center;
 		}
 
 		.contact {
 			a {
 				padding-right: 12px;
-				font-size: 16px;
-				font-weight: 700;
-				color: #999;
-				transition: color .25s ease-out;
+				font-size    : 16px;
+				font-weight  : 700;
+				color        : #999;
+				transition   : color .25s ease-out;
 
 				&:hover {
 					color: #fafafa;
 				}
 			}
 		}
-		
+
 
 		img {
-			max-width: 60px;
-			height: auto;
+			max-width     : 60px;
+			height        : auto;
 			pointer-events: none;
-			cursor: none;
+			cursor        : none;
 		}
+
 		h1 {
-			padding-left: 15px;	
-			font-size: 16px;
-			font-weight: 300;
-			color: #999;
+			padding-left: 15px;
+			font-size   : 16px;
+			font-weight : 300;
+			color       : #999;
 		}
 	}
 
 	&__img {
-		position: relative;
-		margin: 40px auto;
-		perspective: 800px;
+		position       : relative;
+		margin         : 40px auto;
+		perspective    : 800px;
 		transform-style: preserve-3d;
-		will-change: transform;
-		transition: transform .25s ease-out;
+		will-change    : transform;
+		transition     : transform .25s ease-out;
 	}
 
 	&__title {
-		position: absolute;
-		bottom: 200px;
-		left: 20px;
-		font-size: rem(60);
-		font-weight: 700;
-		color: #fafafa !important;
-		z-index: 9999;
+		position           : absolute;
+		bottom             : 200px;
+		left               : 20px;
+		font-size          : rem(60);
+		font-weight        : 700;
+		color              : #fafafa !important;
+		z-index            : 9999;
 		backface-visibility: hidden;
 	}
 

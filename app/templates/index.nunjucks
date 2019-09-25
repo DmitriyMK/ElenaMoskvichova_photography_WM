@@ -22,133 +22,119 @@
 
 <div class="viewport">
 
+	{% include "aside.nunjucks" %}
 
-{% include "aside.nunjucks" %}
+	<div class="main content" id="scroll-container">
 
+		{% include "header.nunjucks" %}
 
-<div>
-	<main class="main content" id="scroll-container">
-		<div>
-			
-			{% include "header.nunjucks" %}
+		<section class="greating go">
+			<div class="wrapper">
 
-			<section class="greating go">
-				<div class="wrapper">
+				<div class="greating__box">
+					<h2 class="greating__title">Фототерапия</h2>
+					<h3 class="greating__subtitle">Фото. Релакс. Вдохновение</h3>
 
-					<div class="greating__box">
-						<h2 class="greating__title">Overall Outcomes</h2>
-						<h3 class="greating__subtitle">Better Customer Experience</h3>
-
-						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-							Molestias
-							tenetur dolorum, eum dolor odit itaque minus repellat?
-						</p>
-
-						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-							Molestias
-							tenetur dolorum, eum dolor odit itaque minus repellat?
-						</p>
-
-						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-							Molestias
-							tenetur dolorum, eum dolor odit itaque minus repellat?
-						</p>
-					</div>
-
+					<p class="greating__text">И так, предлагаю Вам фототерапию. Отдохнуть и расправить крылья после тяжелых будней.</p>
+					<p class="greating__text">Подарить себе релакс и никуда не бежать.</p>
+					<p class="greating__text">Зарядиться энергией и отличным настроением, ведь оно, нам девочкам, так необходимо.</p>
 				</div>
-			</section>
 
+			</div>
+		</section>
 
-			<section class="photo go">
-				<div class="wrapper">
-					<h2 class="offscreen">Photo</h2>
+		<section class="photo go">
+			<div class="wrapper">
+				<h2 class="offscreen">Photo</h2>
 
-					<div class="photo__box">
-						<figure class="photo__item hover-target">
-							<a class="photo__link" href="../page1.html">
-								<img class="photo__img photo__img-big" alt="" src="../img/photo/alexandra/photo001.jpg">
-							</a>
-						</figure>
+				<div class="photo__box">
+					<figure class="photo__item hover-target">
+						<a class="photo__link" href="../page1.html">
+							<img class="photo__img photo__img-big" alt="" src="../img/photo/alexandra/photo001.jpg">
+						</a>
+					</figure>
 
+					<figure class="photo__item hover-target">
+						<a class="photo__link" href="../page1.html">
+							<img class="photo__img photo__img-small" alt="" src="../img/photo/alexandra/photo002.jpg">
+						</a>
+					</figure>
 
-						<figure class="photo__item hover-target">
-							<a class="photo__link" href="../page1.html">
-								<img class="photo__img photo__img-small" alt="" src="../img/photo/alexandra/photo002.jpg">
-							</a>
-						</figure>
+					<figure class="photo__item hover-target">
+						<a class="photo__link" href="../page1.html">
+							<img class="photo__img photo__img-small" alt="" src="../img/photo/alexandra/photo003.jpg">
+						</a>
+					</figure>
 
-
-						<figure class="photo__item hover-target">
-							<a class="photo__link" href="../page1.html">
-								<img class="photo__img photo__img-small" alt="" src="../img/photo/alexandra/photo003.jpg">
-							</a>
-						</figure>
-
-
-						<figure class="photo__item hover-target">
-							<a class="photo__link" href="../page1.html">
-								<img class="photo__img photo__img-big" alt="" src="../img/photo/alexandra/photo004.jpg">
-							</a>
-						</figure>
-					</div>
+					<figure class="photo__item hover-target">
+						<a class="photo__link" href="../page1.html">
+							<img class="photo__img photo__img-big" alt="" src="../img/photo/alexandra/photo004.jpg">
+						</a>
+					</figure>
 				</div>
-			</section>
+			</div>
+		</section>
 
+		<section class="greating go">
+			<div class="wrapper">
 
-			<section class="greating go">
-				<div class="wrapper">
+				<div class="greating__box">
+					<h2 class="greating__title">Overall Outcomes</h2>
+					<h3 class="greating__subtitle">Better Customer Experience</h3>
 
-					<div class="greating__box">
-						<h2 class="greating__title">Overall Outcomes</h2>
-						<h3 class="greating__subtitle">Better Customer Experience</h3>
-
-						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
 							Molestias
 							tenetur dolorum, eum dolor odit itaque minus repellat?
 						</p>
 
-						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
 							Molestias
 							tenetur dolorum, eum dolor odit itaque minus repellat?
 						</p>
 
-						<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
 							Molestias
 							tenetur dolorum, eum dolor odit itaque minus repellat?
 						</p>
-					</div>
-
 				</div>
-			</section>
 
-			{% include "footer.nunjucks" %}
-		</div>
-	</main>
-	
+			</div>
+		</section>
+
+		{% include "footer.nunjucks" %}
+	</div>
 
 	{% include "form.nunjucks" %}
 
+	<div class="scrollup">
+		<svg id="arrow-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-100 -100 400 400" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+			<g>
+				<circle cx="100" cy="100" r="180" stroke="#ededed" fill="#f9f9f9" stroke-width="20"></circle>
+				<path id="path-anim" d="M 100,-80 A180,180   0  0, 1 137.1589814449927,276.12271318024455"
+						stroke="#bc956a" fill="#f9f9f9" stroke-width="23"></path>
+				<polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 "
+						fill="#bc956a" transform="translate(   45,30),
+					scale(0.45)"></polygon>
+			</g>
+		</svg>
+	</div>
 
-<link rel="stylesheet" href="./css/main.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
 
+	<script src="../js/libs/jquery-3.3.1.min.js"></script>
+	<script src="../js/libs/TweenMax.min.js"></script>
+	<script src="../js/libs/simpleParallax.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 
-<script src="../js/libs/jquery-3.3.1.min.js"></script>
-<script src="../js/libs/TweenMax.min.js"></script>
-<script src="../js/libs/simpleParallax.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+	<script src="../js/libs/remodal.min.js"></script>
+	<script src="../js/libs/masked-input.js"></script>
+	<script src="../js/libs/scrollUp.js"></script>
 
-<script src="../js/libs/remodal.min.js"></script>
-
-
-
-<script src="./js/script.min.js"></script>
-<script src="./js/script.js"></script>
-{% include "templateEnd.nunjucks" %}
+	<script src="./js/script.min.js"></script>
+	<script src="./js/script.js"></script>
+	{% include "templateEnd.nunjucks" %}

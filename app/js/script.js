@@ -94,7 +94,7 @@ $(document).ready(function () {
       new simpleParallax(image, {
         delay: .55,
         scale: 1.35,
-        // transition: 'cubic-bezier(0,0,0,1)'
+        transition: 'cubic-bezier(0,0,0,1)'
       });
 
 
@@ -102,7 +102,7 @@ $(document).ready(function () {
       new simpleParallax(image2, {
         delay: 1.5,
         scale: 1.15,
-        // transition: 'cubic-bezier(0,0,0,1)'
+        transition: 'cubic-bezier(0,0,0,1)'
       });
 
     }
@@ -113,33 +113,33 @@ $(document).ready(function () {
 
 
 // Start Page cursors
-(function ($) {
-  "use strict";
-  document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
-    t.style.left = n.clientX + "px",
-      t.style.top = n.clientY + "px",
-      e.style.left = n.clientX + "px",
-      e.style.top = n.clientY + "px"
-  });
-  var t = document.getElementById("cursor"),
-    e = document.getElementById("cursor2")
+// (function ($) {
+//   "use strict";
+//   document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
+//     t.style.left = n.clientX + "px",
+//       t.style.top = n.clientY + "px",
+//       e.style.left = n.clientX + "px",
+//       e.style.top = n.clientY + "px"
+//   });
+//   var t = document.getElementById("cursor"),
+//     e = document.getElementById("cursor2")
 
-  function n(t) {
-    e.classList.add("hover")
-  }
+//   function n(t) {
+//     e.classList.add("hover")
+//   }
 
-  function s(t) {
-    e.classList.remove("hover")
-  }
-  s();
-  for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
-    o(r[a])
-  }
+//   function s(t) {
+//     e.classList.remove("hover")
+//   }
+//   s();
+//   for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+//     o(r[a])
+//   }
 
-  function o(t) {
-    t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
-  }
-})(jQuery);
+//   function o(t) {
+//     t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+//   }
+// })(jQuery);
 // End Page cursors
 
 

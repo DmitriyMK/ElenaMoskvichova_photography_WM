@@ -6,27 +6,15 @@
 
         <ul class="sidebar__list">
             <li class="sidebar__item hover-target">
-                <a href="#">
-					Références
-				</a>
+                <a href="#">Références</a>
             </li>
 
             <li class="sidebar__item hover-target">
-                <a href="#">
-					Portfolio
-				</a>
+                <a href="#">Portfolio</a>
             </li>
 
             <li class="sidebar__item hover-target">
-                <a href="#">
-					Contact
-				</a>
-            </li>
-
-            <li class="sidebar__item hover-target">
-                <a href="#">
-					Contact
-				</a>
+                <a href="#">Contact</a>
             </li>
         </ul>
 
