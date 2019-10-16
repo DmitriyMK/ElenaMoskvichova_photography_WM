@@ -196,7 +196,5 @@ $(function () {
 });
 // End Reveal effect
 
-$('.phone-mask').mask('+38(999)999-99-99');
-
 
 window.console.log('Made with fun and love ❤️❤️❤️️ by Dmitriy Moskvichov')

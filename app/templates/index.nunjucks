@@ -33,11 +33,10 @@
 
 				<div class="greating__box">
 					<h2 class="greating__title">Фототерапия</h2>
-					<h3 class="greating__subtitle">Фото. Релакс. Вдохновение</h3>
+					<h3 class="greating__subtitle">Путь к очущению своей безупречноcти.</h3>
 
-					<p class="greating__text">И так, предлагаю Вам фототерапию. Отдохнуть и расправить крылья после тяжелых будней.</p>
-					<p class="greating__text">Подарить себе релакс и никуда не бежать.</p>
-					<p class="greating__text">Зарядиться энергией и отличным настроением, ведь оно, нам девочкам, так необходимо.</p>
+					<p class="greating__text">Женщина в моей объективе всегда фотогенична и прекрасна.</p>
+					<p class="greating__text">Оставить заботы за закрытой дверью.</p>
 				</div>
 
 			</div>
@@ -79,48 +78,52 @@
 			<div class="wrapper">
 
 				<div class="greating__box">
-					<h2 class="greating__title">Overall Outcomes</h2>
+					<h2 class="greating__title">Почему Вам понравится фототерапия</h2>
+
+
+
 					<h3 class="greating__subtitle">Better Customer Experience</h3>
 
 					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-							Molestias
-							tenetur dolorum, eum dolor odit itaque minus repellat?
-						</p>
+						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+						Molestias
+						tenetur dolorum, eum dolor odit itaque minus repellat?
+					</p>
 
 					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-							Molestias
-							tenetur dolorum, eum dolor odit itaque minus repellat?
-						</p>
+						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+						Molestias
+						tenetur dolorum, eum dolor odit itaque minus repellat?
+					</p>
 
 					<p class="greating__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
-							Molestias
-							tenetur dolorum, eum dolor odit itaque minus repellat?
-						</p>
+						Ratione voluptate sit quas velit ea ullam quis nihil? Consequatur fuga quo explicabo!
+						Molestias
+						tenetur dolorum, eum dolor odit itaque minus repellat?
+					</p>
 				</div>
 
 			</div>
 		</section>
 
+		<div class="scrollup">
+			<svg id="arrow-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-100 -100 400 400" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+				<g>
+					<circle cx="100" cy="100" r="180" stroke="#ededed" fill="#f9f9f9" stroke-width="20"></circle>
+					<path id="path-anim" d="M 100,-80 A180,180   0  0, 1 137.1589814449927,276.12271318024455" stroke="#bc956a" fill="#f9f9f9" stroke-width="23"></path>
+					<polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 " fill="#bc956a" transform="translate(   45,30),
+									scale(0.45)"></polygon>
+				</g>
+			</svg>
+		</div>
+
+
+
 		{% include "footer.nunjucks" %}
 	</div>
 
-	{% include "form.nunjucks" %}
 
-	<div class="scrollup">
-		<svg id="arrow-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-100 -100 400 400" style="enable-background:new 0 0 256 256;" xml:space="preserve">
-			<g>
-				<circle cx="100" cy="100" r="180" stroke="#ededed" fill="#f9f9f9" stroke-width="20"></circle>
-				<path id="path-anim" d="M 100,-80 A180,180   0  0, 1 137.1589814449927,276.12271318024455"
-						stroke="#bc956a" fill="#f9f9f9" stroke-width="23"></path>
-				<polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 "
-						fill="#bc956a" transform="translate(   45,30),
-					scale(0.45)"></polygon>
-			</g>
-		</svg>
-	</div>
+
 
 	<link rel="stylesheet" href="./css/main.min.css">
 
@@ -131,8 +134,6 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 
-	<script src="../js/libs/remodal.min.js"></script>
-	<script src="../js/libs/masked-input.js"></script>
 	<script src="../js/libs/scrollUp.js"></script>
 
 	<script src="./js/script.min.js"></script>
