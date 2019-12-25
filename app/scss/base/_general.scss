@@ -2,103 +2,97 @@
 @import "./helpers/_mixins";
 
 body {
-	position     : relative;
-	height       : 100%;
-	width        : 100%;
-	margin       : 0;
-	padding-right: 0 !important;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-right: 0 !important;
+  font-family: $ff1;
+  font-size: $fs;
+  font-weight: 400;
+  line-height: 1.2;
+  background: #000;
+  color: #fafafa;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 
-	font-family: $ff1;
-	font-size  : $fs;
-	font-weight: 400;
-	line-height: 1.2;
-	background : #000;
-	color      : #fafafa;
-	box-sizing : border-box;
-	overflow-x : hidden;
-	overflow-y : scroll;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
 
-	overflow-wrap              : break-word;
-	word-wrap                  : break-word;
-	hyphens                    : auto;
-	text-size-adjust           : none;
-	text-rendering             : optimizeLegibility;
-	-webkit-overflow-scrolling : touch;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-font-smoothing     : antialiased;
-	-moz-osx-font-smoothing    : grayscale;
-	scroll-behavior            : smooth;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
 
-	&::-webkit-scrollbar-track {
-		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-		background-color  : #F5F5F5;
-	}
-
-	&::-webkit-scrollbar {
-		width: 6px;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-		background-color  : $grey-dark;
-	}
+  &::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: $grey-dark;
+  }
 }
 
-
 *::selection {
-	background-color: #fafafa;
-	color           : #fafafa;
+  background-color: #fafafa;
+  color: #fafafa;
 }
 
 *,
 :after,
 :before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+// .viewport {
+//   // overflow: hidden;
+//   position: fixed;
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+// }
 
-.viewport {
-	// overflow: hidden;
-	position   : fixed;
-	height     : 100%;
-	width      : 100%;
-	top        : 0;
-	left       : 0;
-	right      : 0;
-	bottom     : 0;
-}
+// .scroll-container {
+//   position: absolute;
+//   overflow: hidden;
+//   z-index: 10;
 
-.scroll-container {
-	position: absolute;
-	overflow: hidden;
-	z-index : 10;
+//   backface-visibility: hidden;
+//   transform-style: preserve-3d;
+// }
 
-	backface-visibility: hidden;
-	transform-style    : preserve-3d;
-}
-
-.content {
-	width: 100vw;
-}
-
+// .content {
+//   width: 100vw;
+// }
 
 [data-scroll] {
-	will-change: transform;
+  will-change: transform;
 }
 
 .btn {
-	padding    : 10px 30px;
-	font-family: $ff1;
-	font-size  : 16px;
-	font-weight: 700;
-	background : transparent;
-	border     : 1px solid #999;
-	color      : #999;
-	outline    : none !important;
-	transition : border .25s ease-out, color .25s ease-out;
+  padding: 10px 30px;
+  font-family: $ff1;
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  border: 1px solid #999;
+  color: #999;
+  outline: none !important;
+  transition: border 0.25s ease-out, color 0.25s ease-out;
 
-	&:hover {
-		border-color: #fafafa;
-		color       : #fafafa;
-	}
+  &:hover {
+    border-color: #fafafa;
+    color: #fafafa;
+  }
 }

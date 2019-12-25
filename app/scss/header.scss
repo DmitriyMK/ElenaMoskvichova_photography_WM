@@ -1,20 +1,21 @@
-@import "./helpers/_vars";
-@import "./helpers/_mixins";
+@import "./helpers/vars";
+@import "./helpers/mixins";
 
 // BASE
-@import "./base/_reset";
-@import "./base/_fonts";
-@import "./base/_general";
-@import "./base/_layout";
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/general";
+@import "./base/layout";
 
 // COMPONENTS
-@import "./components/_scrollUp";
+@import "./components/scrollUp";
+@import "./plugins/remodal";
+@import "./plugins/remodal-customize";
 
-@import "./sections/_greating";
-@import "./sections/_sidebar";
+@import "./sections/greating";
 
 // HACKS
-@import "./helpers/_hacks";
+@import "./helpers/hacks";
 
 .header {
   padding: 80px 0;
@@ -84,5 +85,36 @@
 
   &__picture {
     @extend .img-responsive;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.smm {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+
+  a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+
+    svg {
+      display: block;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 10px;
+      fill: #fafafa;
+      transition: fill 0.25s ease-in;
+
+      &:hover {
+        fill: #000;
+      }
+    }
   }
 }

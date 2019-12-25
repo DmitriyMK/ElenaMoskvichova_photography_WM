@@ -1,21 +1,67 @@
 <header class="header">
     <div class="wrapper">
-        <div class="header__logo hover-target" >
-            <a href="index.html"  aria-label="Go to the home page">
+        <div class="header__logo" >
+            <a href="index.html" aria-label="Go to the home page">
                 <img src="../img/icons/camera.svg" alt="Elena Moskvichova" title="Elena Moskvichova">
                 <h1>Elena Moskvichova <br> photographer</h1>
             </a>
 
             <div class="contact">
                 <a href="tel:+380664003496">+38 066 400 34 96</a>
+                {# <button class="btn" data-remodal-target="callback">Call me</button> #}
+
+                <ul class="smm">
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <svg>
+                                <use xlink:href="../img/icons/sprite/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <svg>
+                                <use xlink:href="../img/icons/sprite/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <svg>
+                                <use xlink:href="../img/icons/sprite/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
         </div>
 
-        <div class="header__img hover-target">
+        <div class="header__img">
             <img class="header__picture" src="../../img/1.png" alt role="presentation">
         </div>
 
-        <h2 class="header__title">Женский портрет</h2>
+        {# <div class="remodal formBox remodal-is-initialized remodal-is-opened" data-remodal-id="callback">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+            <form class="form form-validate" id="feedback-form" data-form="попап" method="POST" name="callback">
+
+                <p class="form__title">lorrrrrrrrrrrrrrrrrreemmmmmmmmm</p>
+
+                <label>
+						Name
+						<input class="input form-control" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]+$" maxlength="30" type="text" name="name" required="">
+                </label>
+
+                <label>
+						phone
+						<input class="input phone-mask form-control" type="tel" name="phone" required="" placeholder="+38(___) ___-__-__">
+                </label>
+
+
+                <button type="submit">Call me</button>
+            </form>
+        </div> #}
+
+        <h2 class="header__title">Woman's portrait</h2>
     </div>
 </header>
