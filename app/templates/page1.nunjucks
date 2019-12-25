@@ -1,63 +1,49 @@
 {% include "templateStart.nunjucks" %}
 
-
 <div id="trigger"></div>
-<div class="cursor" id="cursor"></div>
-<div class="cursor2" id="cursor2"></div>
+<div class="load-screen">
+	<!-- Loading images 🖼️ ... -->
+</div>
+<main class="main content" id="wrapper">
+	<div>
 
-<div class="viewport">
+		{% include "headerInner.nunjucks" %}
 
+		<section class="photoInner">
+			<div class="wrapper">
+				<h2 class="offscreen">Photo</h2>
 
-{% include "aside.nunjucks" %}
+				<div class="photoInner__box">
+					<figure class="photoInner__item">
+						<img class="photoInner__img js-webgl-image" alt="" src="../img/photo/alexandra/photo001.jpg">
+					</figure>
 
+					<figure class="photoInner__item">
+						<img class="photoInner__img js-webgl-image" alt="" src="../img/photo/alexandra/photo002.jpg">
+					</figure>
 
-<div>
-	<main class="main content" id="scroll-container">
-		<div>
+					<figure class="photoInner__item">
+						<img class="photoInner__img js-webgl-image" alt="" src="../img/photo/alexandra/photo003.jpg">
+					</figure>
 
-			{% include "headerInner.nunjucks" %}
-			
-			<section class="photoInner">
-				<div class="wrapper">
-					<h2 class="offscreen">Photo</h2>
+					<figure class="photoInner__item">
+						<img class="photoInner__img js-webgl-image" alt="" src="../img/photo/alexandra/photo004.jpg">
+					</figure>
 
-					<div class="photoInner__box">
-						<figure class="photoInner__item hover-target">
-							<img class="photoInner__img" alt="" src="../img/photo/alexandra/photo001.jpg">
-						</figure>
-
-						<figure class="photoInner__item hover-target">
-							<img class="photoInner__img" alt="" src="../img/photo/alexandra/photo002.jpg">
-						</figure>
-
-						<figure class="photoInner__item hover-target">
-							<img class="photoInner__img" alt="" src="../img/photo/alexandra/photo003.jpg">
-						</figure>
-
-						<figure class="photoInner__item hover-target">
-							<img class="photoInner__img" alt="" src="../img/photo/alexandra/photo004.jpg">
-						</figure>
-
-						<figure class="photoInner__item hover-target">
-							<img class="photoInner__img" alt="" src="../img/photo/alexandra/photo005.jpg">
-						</figure>
-					</div>
+					<figure class="photoInner__item">
+						<img class="photoInner__img js-webgl-image" alt="" src="../img/photo/alexandra/photo005.jpg">
+					</figure>
 				</div>
-			</section>
+			</div>
+		</section>
+	</div>
+</main>
 
+{% include "footer.nunjucks" %}
 
-
-			{% include "footer.nunjucks" %}
-		</div>
-	</main>
-	
-
-
-	{% include "form.nunjucks" %}
-
+<canvas id="app" touch-action="none"></canvas>
 
 <link rel="stylesheet" href="./css/main.min.css">
-
 
 <script src="../js/libs/jquery-3.3.1.min.js"></script>
 <script src="../js/libs/TweenMax.min.js"></script>
@@ -66,10 +52,14 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 
-<script src="../js/libs/remodal.min.js"></script>
-
-
+<script src="./js/libs/babylon.js"></script>
+<script src="./js/libs/tornis.js"></script>
+<script src="./js/libs/babylon.gui.min.js"></script>
+<script src="./js/libs/imagesloaded.pkgd.min.js"></script>
+<script src="../js/libs/SmoothScroll.min.js"></script>
 
 <script src="./js/script.min.js"></script>
 <script src="./js/script.js"></script>
+
+<script src="../js/libs/shaders.js"></script>
 {% include "templateEnd.nunjucks" %}
