@@ -1,20 +1,8 @@
-
-
-/**
- * HOW THIS WORKS:
- * Every image/text on the page has a specific CSS class:
- * `.js-webgl-image`
- * `.js-webgl-text`
- * 
- * The `App` class goes through all the elements with those classes and calculates their bounding rects, updating each element's coordinates based on the scroll of the page + the bounding rects of the element.
- *
- * The script then hides every element by adding the `.js-webgl-element-hidden` CSS class to them.
- *
- * NOTE: The key part is the Camera type; to be able to have a 1:1 ratio from the real elements to the ones rendered in WebGL the camera has to be set to ORTHOGRAPHIC. Thanks to that, each value (width, height, etc...) set in WebGL corresponds to the pixel value.
- *
+/*
  * CREDITS:
  * - Fisheye shader: https://www.shadertoy.com/view/lttXD4
  * - Hover effect on the images: https://tympanus.net/codrops/2018/04/10/webgl-distortion-hover-effects/
+ * - A PEN BY Francesco Michelini  https://codepen.io/kekkorider/pen/GRKqEXy
  */
 
 class App {
@@ -50,7 +38,7 @@ class App {
     this.addListeners()
     this.setFisheye()
 
-    console.log(this)
+    // console.log(this)
   }
 
   setup() {
@@ -183,17 +171,17 @@ class App {
     }
 
     // Texts
-    num = this.texts.length
-    for (let i = 0; i < num; i++) {
-      const bounds = this.texts[i].getBoundingClientRect()
+    // num = this.texts.length
+    // for (let i = 0; i < num; i++) {
+    //   const bounds = this.texts[i].getBoundingClientRect()
 
-      this.planesTextsBounds[i] = {
-        x: bounds.x,
-        y: bounds.y + (window.scrollY || window.pageYOffset),
-        width: bounds.width,
-        height: bounds.height
-      }
-    }
+    //   this.planesTextsBounds[i] = {
+    //     x: bounds.x,
+    //     y: bounds.y + (window.scrollY || window.pageYOffset),
+    //     width: bounds.width,
+    //     height: bounds.height
+    //   }
+    // }
   }
 
   setElementsStyle() {
@@ -220,11 +208,11 @@ class App {
     }
 
     // Texts
-    num = this.texts.length
-    for (let i = 0; i < num; i++) {
-      this.planesTexts[i].top = this.planesTextsBounds[i].height / 2 - this.canvas.clientHeight / 2 + this.planesTextsBounds[i].y - (window.scrollY || window.pageYOffset)
-      this.planesTexts[i].left = this.planesTextsBounds[i].width / 2 - this.canvas.clientWidth / 2 + this.planesTextsBounds[i].x
-    }
+    // num = this.texts.length
+    // for (let i = 0; i < num; i++) {
+    //   this.planesTexts[i].top = this.planesTextsBounds[i].height / 2 - this.canvas.clientHeight / 2 + this.planesTextsBounds[i].y - (window.scrollY || window.pageYOffset)
+    //   this.planesTexts[i].left = this.planesTextsBounds[i].width / 2 - this.canvas.clientWidth / 2 + this.planesTextsBounds[i].x
+    // }
   }
 
   setTextStyle({ plane, index }) {

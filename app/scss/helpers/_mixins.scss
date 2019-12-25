@@ -4,22 +4,20 @@
 }
 
 @function rem($val, $base: 16) {
-    // if it's a unitless number
-    @if type-of($val) == number and unitless($val) {
-        // don't convert 0
-        @if $val == 0 {
-            @return 0;
-        }
-        // assume its px and convert it to rem based on $base document font-size
-        @return #{$val / $base}rem;
+  // if it's a unitless number
+  @if type-of($val) == number and unitless($val) {
+    // don't convert 0
+    @if $val == 0 {
+      @return 0;
     }
-    @return $val;
+    // assume its px and convert it to rem based on $base document font-size
+    @return #{$val / $base}rem;
+  }
+  @return $val;
 }
 
-
-
 // Font Face
-@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg ) {
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
   $src: null;
 
   $extmods: (
@@ -43,5 +41,24 @@
     font-style: $style;
     font-weight: $weight;
     src: $src;
+  }
+}
+
+@mixin section-title {
+  position: relative;
+  display: table;
+  padding: 20px 0;
+  font-size: rem(38);
+  font-weight: 500;
+  border-bottom: 1px solid #666;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: #bc956a;
   }
 }

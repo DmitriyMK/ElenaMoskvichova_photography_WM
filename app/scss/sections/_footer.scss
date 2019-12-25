@@ -2,7 +2,27 @@
 @import "../helpers/_mixins";
 
 .footer {
-    &__box {
-        padding: 30px 0;
+  margin-bottom: -25px;
+  background: lighten($color: #000, $amount: 6%);
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+  .smm {
+    li {
+      margin-right: 10px;
     }
+  }
+
+  .link {
+    display: block;
+    padding-bottom: 12px;
+    font-size: rem(14);
+  }
+  strong {
+    display: block;
+  }
 }

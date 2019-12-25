@@ -1,9 +1,6 @@
 {% include "templateStart.nunjucks" %}
 
 <div id="trigger"></div>
-<div class="load-screen">
-	<!-- Loading images 🖼️ ... -->
-</div>
 <main class="main content" id="wrapper">
 	<div>
 
