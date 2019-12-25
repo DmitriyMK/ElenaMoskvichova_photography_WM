@@ -43,7 +43,7 @@
 
 
 
-	<section class="greating go">
+	<section class="greating">
 		<h2 class="offscreen">Photo gallery</h2>
 
 		<div class="wrapper">
@@ -86,7 +86,7 @@
 				<div class="greating__photo">
 					<figure class="photo__item ">
 						<a class="photo__link" href="./page1.html">
-							<img class="photo__img photo__img-small" alt="" src="./img/photo/alexandra/photo003.jpg">
+							<img class="photo__img js-webgl-image" alt="" src="./img/photo/alexandra/photo003.jpg">
 						</a>
 					</figure>
 				</div>

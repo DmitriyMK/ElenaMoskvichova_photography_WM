@@ -1,7 +1,5 @@
 @import "./helpers/_vars";
 
-
-
 .mainwrap {
   background: url(../img/bg.png) center center repeat fixed;
 }
@@ -11,7 +9,6 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
-
 
   @media (max-width: $desktop-xl) {
     max-width: 1320px;
@@ -24,15 +21,49 @@
     max-width: 1024px;
   }
   @media (max-width: $tablet) {
-    width: 980px;
+    max-width: 980px;
     padding: 0 40px;
   }
   @media (max-width: $note) {
-    width: 725px;
+    max-width: 725px;
     padding: 0 30px;
   }
   @media (max-width: $phone-xl) {
-    width: 100%;
+    max-width: 100%;
     padding: 0 15px;
   }
+}
+
+#app {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  touch-action: none;
+  width: 100%;
+}
+#wrapper,
+#footer {
+  position: relative;
+  z-index: 999;
+}
+.js-webgl-element-hidden {
+  opacity: 0;
+}
+.load-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 260%;
+  z-index: 10;
+  background-color: #121314;
+  transition: opacity 0.5s;
+}
+.load-screen.hidden {
+  opacity: 0;
+  touch-action: none;
+  pointer-events: none;
 }
