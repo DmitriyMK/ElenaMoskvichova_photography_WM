@@ -1,84 +1,35 @@
 // titles for semantics and structure HTML
 .offscreen {
-	position: absolute;
-	height  : 1px;
-	width   : 1px;
-	margin  : -1px;
-	padding : 0;
-	border  : 0;
-	clip    : rect(0 0 0 0);
-	overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-
 /* ONLY FOR IE11 */
-@media all and (-ms-high-contrast:none) {
-	.viewport {
-		overflow: hidden !important;
-		position: relative !important;
-		top     : auto !important;
-		left    : auto !important;
-		right   : auto !important;
-		bottom  : auto !important;
-		height  : 100%;
-	}
-
-	.scroll-container {
-		position           : static;
-		overflow           : visible;
-		z-index            : 10;
-		display            : block;
-		backface-visibility: visible;
-		transform-style    : none;
-	}
-
-	.content {
-		width         : 100%;
-		padding-bottom: 0;
-	}
-
-	.works {
-		background-attachment: scroll;
-	}
-
-	.form__line,
-	.formOrder__line {
-		line-height: 48px;
-		height     : 48px;
-	}
+@media all and (-ms-high-contrast: none) {
+  .form__line,
+  .formOrder__line {
+    line-height: 48px;
+    height: 48px;
+  }
 }
 
 /* ONLY FOR EDGE */
-@supports (-ms-ime-align:auto) {
-	.viewport {
-		overflow: hidden !important;
-		position: relative !important;
-		top     : auto !important;
-		left    : auto !important;
-		right   : auto !important;
-		bottom  : auto !important;
-		height  : 100%;
-	}
+@supports (-ms-ime-align: auto) {
+  .js-webgl-element-hidden {
+    opacity: 1;
+  }
 
-	.scroll-container {
-		position           : static;
-		overflow           : visible;
-		z-index            : 10;
-		display            : block;
-		backface-visibility: visible;
-		transform-style    : none;
-	}
+  .works {
+    background-attachment: scroll;
+  }
 
-	.content {
-		width         : 100%;
-		padding-bottom: 0;
-	}
-
-	.works {
-		background-attachment: scroll;
-	}
-
-	.advantages svg {
-		left: 0 !important;
-	}
+  .advantages svg {
+    left: 0 !important;
+  }
 }
