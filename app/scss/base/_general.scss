@@ -43,17 +43,13 @@ body {
 
 *::selection {
   background-color: #fafafa;
-  color: #fafafa;
+  // color: #fafafa;
 }
 
 *,
 :after,
 :before {
   box-sizing: border-box;
-}
-
-[data-scroll] {
-  will-change: transform;
 }
 
 .btn {
@@ -71,4 +67,14 @@ body {
     border-color: #fafafa;
     color: #fafafa;
   }
+}
+
+.b-lazy {
+  transition: opacity 0.5s linear;
+  max-width: 100%;
+  opacity: 0;
+  z-index: -1;
+}
+.b-lazy.b-loaded {
+  opacity: 1;
 }

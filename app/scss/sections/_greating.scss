@@ -9,10 +9,21 @@
     padding: 80px 0;
     display: flex;
     align-items: center;
+
+    @media (max-width: $note) {
+      flex-direction: column;
+      padding: 30px 0;
+    }
   }
 
   &__content {
     flex-basis: 50%;
+
+    @media (max-width: $note) {
+      &:nth-of-type(even) {
+        order: -1;
+      }
+    }
   }
 
   &__title {
@@ -20,6 +31,19 @@
     margin: auto;
     font-size: rem(38);
     font-weight: 500;
+
+    @media (max-width: $laptop) {
+      font-size: rem(32);
+    }
+
+    @media (max-width: $note) {
+      padding: 0;
+      font-size: rem(26);
+    }
+
+    @media (max-width: $phone-xl) {
+      font-size: rem(22);
+    }
   }
 
   &__text {
@@ -27,5 +51,13 @@
     margin: 0x auto;
     padding: 15px 50px;
     font-size: rem(24);
+
+    @media (max-width: $note) {
+      padding: 15px 0;
+    }
+
+    @media (max-width: $phone-xl) {
+      font-size: rem(20);
+    }
   }
 }

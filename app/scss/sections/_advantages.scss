@@ -13,6 +13,19 @@
     padding-bottom: 40px;
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: $note) {
+      flex-wrap: wrap;
+      padding-top: 60px;
+      padding-bottom: 0px;
+    }
+  }
+
+  &__item {
+    @media (max-width: $note) {
+      flex-basis: 50%;
+      margin-bottom: 30px;
+    }
   }
 
   h3 {
@@ -20,6 +33,10 @@
     margin: 20px auto;
     font-size: rem(22);
     text-align: center;
+
+    @media (max-width: $note) {
+      font-size: rem(19);
+    }
   }
 
   svg {

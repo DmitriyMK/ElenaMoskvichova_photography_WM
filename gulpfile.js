@@ -46,14 +46,14 @@ gulp.task('nunjucks', function () {
 			data(function () {
 				return globalData;
 			})
-			.on('error', notify.onError())
+				.on('error', notify.onError())
 		)
 
 		.pipe(
 			nunjucksRender({
 				path: ['./app/templates/partials/']
 			})
-			.on('error', notify.onError())
+				.on('error', notify.onError())
 		)
 		.pipe(gulp.dest('./app/'));
 });
@@ -62,8 +62,8 @@ gulp.task('nunjucks', function () {
 
 gulp.task('common-js', function () {
 	return gulp.src([
-			'./app/js/libs/remodal.min.js',
-		])
+		'./app/js/libs/blazy.js',
+	])
 		.pipe(concat('script.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./app/js'));
@@ -72,8 +72,8 @@ gulp.task('common-js', function () {
 
 gulp.task('js', ['common-js'], function () {
 	return gulp.src([
-			'./app/js/script.min.js',
-		])
+		'./app/js/script.min.js',
+	])
 		.pipe(concat('scripts.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./app/js'))
@@ -161,8 +161,8 @@ gulp.task('deploy', function () {
 		'dist/.htaccess',
 	];
 	return gulp.src(globs, {
-			buffer: false
-		})
+		buffer: false
+	})
 		.pipe(conn.dest('/path/to/folder/on/server'));
 
 });
@@ -205,7 +205,7 @@ gulp.task('svgSprite', function () {
 			},
 		}))
 		.pipe(svgmin({
-            plugins: [
+			plugins: [
 				{
 					removeComments: true
 				},
@@ -227,7 +227,7 @@ gulp.task('svgSprite', function () {
 				{
 					cleanupIDs: false
 				}
-            ]
-        }))
+			]
+		}))
 		.pipe(gulp.dest('./app/img/icons/sprite'))
 });

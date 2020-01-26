@@ -4,7 +4,7 @@
  * - Hover effect on the images: https://tympanus.net/codrops/2018/04/10/webgl-distortion-hover-effects/
  * - A PEN BY Francesco Michelini  https://codepen.io/kekkorider/pen/GRKqEXy
  */
-
+if (document.documentElement.clientWidth > 1024) {
 class App {
   constructor({ images = [], texts = [] } = {}) {
     this.canvas = null
@@ -144,16 +144,16 @@ class App {
     /*
      * Texts
      */
-    const gui = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("myUI")
-    const numTexts = this.texts.length
+    // const gui = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("myUI")
+    // const numTexts = this.texts.length
 
-    for (let i = 0; i < numTexts; i++) {
-      this.texts[i].classList.add('js-webgl-element-hidden')
-      this.planesTexts[i] = new BABYLON.GUI.TextBlock(`${this.texts[i].textContent.substring(0, 10)} ...`, this.texts[i].textContent)
-      this.setTextStyle({ plane: this.planesTexts[i], index: i })
+    // for (let i = 0; i < numTexts; i++) {
+    //   this.texts[i].classList.add('js-webgl-element-hidden')
+    //   this.planesTexts[i] = new BABYLON.GUI.TextBlock(`${this.texts[i].textContent.substring(0, 10)} ...`, this.texts[i].textContent)
+    //   this.setTextStyle({ plane: this.planesTexts[i], index: i })
 
-      gui.addControl(this.planesTexts[i])
-    }
+    //   gui.addControl(this.planesTexts[i])
+    // }
   }
 
   setElementsBounds() {
@@ -354,6 +354,4 @@ imagesLoaded('#wrapper', () => {
   tornis.watchViewport(updateValues)
 })
 
-
-
-
+};
