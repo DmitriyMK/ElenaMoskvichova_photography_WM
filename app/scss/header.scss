@@ -53,7 +53,8 @@
         transition: color 0.25s ease-out;
 
         @media (max-width: $note) {
-          padding-right: 6px;
+          font-size: 14px;
+          padding-right: 0;
         }
 
         &:hover {
