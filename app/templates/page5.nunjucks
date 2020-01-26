@@ -1,0 +1,217 @@
+{% include "templateStart.nunjucks" %}
+
+<div id="trigger"></div>
+<main class="main content" id="wrapper">
+	<div>
+
+		{% include "headerInner.nunjucks" %}
+
+		<section class="photoInner">
+			<div class="wrapper">
+				<h2 class="offscreen">Photo</h2>
+
+				<div class="photoInner__box">
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/1.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/1.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/1.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/2.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/2.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/2.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/3.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/3.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/3.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/4.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/4.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/4.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/5.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/5.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/5.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/6.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/6.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/6.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/7.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/7.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/7.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/8.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/8.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/8.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/9.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/9.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/9.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/10.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/10.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/10.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/11.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/11.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/11.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/12.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/12.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/12.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/013.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/013.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/013.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/13.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/13.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/13.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/14.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/14.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/14.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/015.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/015.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/015.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/15.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/15.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/15.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/016.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/016.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/016.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/16.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/16.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/16.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/17.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/17.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/17.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/18.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/18.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/18.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/19.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/19.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/19.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/05/20.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/20.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/20.jpg" role="presentation">
+						</picture>
+					</figure>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+
+{% include "footer.nunjucks" %}
+
+<link rel="stylesheet" href="./css/main.min.css">
+
+<script src="./js/libs/jquery-3.3.1.min.js"></script>
+<script src="./js/libs/TweenMax.min.js"></script>
+<script src="./js/libs/simpleParallax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script src="./js/libs/svgxuse.min.js"></script>
+
+<script src="./js/script.min.js"></script>
+<script src="./js/script.js"></script>
+{% include "templateEnd.nunjucks" %}

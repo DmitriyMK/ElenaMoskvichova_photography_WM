@@ -65,7 +65,7 @@
 
   &__img {
     position: relative;
-    margin: 40px auto;
+    margin: 0 auto 40px auto;
     perspective: 800px;
     transform-style: preserve-3d;
     will-change: transform;
@@ -81,10 +81,13 @@
     color: #fafafa !important;
     z-index: 9999;
     backface-visibility: hidden;
+
+    max-width: 520px;
   }
 
   &__picture {
     @extend .img-responsive;
+    margin: auto;
   }
 
   .contact {
@@ -116,5 +119,11 @@
         fill: #000;
       }
     }
+  }
+}
+
+.photo {
+  &__img {
+    max-height: 800px;
   }
 }
