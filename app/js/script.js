@@ -36,51 +36,6 @@ $(document).ready(function () {
 
 
 
-
-// easyScroll({
-//   'scrollableDomEle': window,
-//   'direction': 'bottom',
-//   'duration': 2000,
-//   'easingPreset': 'easeInQuad',
-//   'scrollAmount': 1000
-// });
-
-
-
-// Start Page cursors
-// (function ($) {
-//   "use strict";
-//   document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
-
-//     t.style.left = n.clientX + "px",
-//       t.style.top = n.clientY + "px",
-//       e.style.left = n.clientX + "px",
-//       e.style.top = n.clientY + "px"
-//   });
-//   var t = document.getElementById("cursor"),
-//     e = document.getElementById("cursor2")
-
-//   function n(t) {
-//     e.classList.add("hover")
-//   }
-
-//   function s(t) {
-//     e.classList.remove("hover")
-//   }
-//   s();
-
-//   for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
-//     o(r[a])
-//   }
-
-//   function o(t) {
-//     t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
-//   }
-// })(jQuery);
-// End Page cursors
-
-
-
 // Scroll Go
 let tl = new TimelineMax();
 tl.to('.header__picture', 1.65, { y: -200, scaleX: 0.75, rotationX: 20, scaleY: 0.75, opacity: 0, ease: Linear.easeNone }, 0);
@@ -112,7 +67,7 @@ scene.addTo(controller);
     let viewport_height = $window.height()
     let viewport_bottom = viewport_top + viewport_height
     let $elem = $(elem)
-    let top = $elem.offset().top + 200;
+    let top = $elem.offset().top - 200;
     let height = $elem.height()
     let bottom = top + height
 

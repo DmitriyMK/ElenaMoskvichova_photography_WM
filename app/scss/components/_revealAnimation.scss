@@ -2,70 +2,64 @@
 @import "../helpers/_mixins";
 
 .reveal {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
+  &,
+  &:after,
+  &:before {
+    animation-delay: 0.2s;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 
-    &,
-    &:after,
-    &:before {
-        animation-delay: 0.2s;
-        animation-duration: 0.8s;
-        animation-fill-mode: both;
-        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        background-color: $light-secondary;
-        transform: scaleX(0);
-        transform-origin: 0 50%;
-        pointer-events: none;
-        animation-name: revealer;
-        animation-duration: 1s;
-    }
+    background-color: $light-secondary;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: revealer;
+    animation-duration: 1s;
+  }
 }
-
-
 
 @keyframes revealer {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
 
-    0%,
-    50% {
-        transform-origin: 0 50%;
-    }
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
 
-    60%,
-    100% {
-        transform-origin: 100% 50%;
-    }
+  60% {
+    transform: scaleX(1);
+  }
 
-    60% {
-        transform: scaleX(1);
-    }
-
-    100% {
-        transform: scaleX(0);
-    }
+  100% {
+    transform: scaleX(0);
+  }
 }
 
-
 .focus-in {
-    animation: focus-in .8s ease 0s both;
+  animation: focus-in 0.8s ease 0s both;
 }
 
 @keyframes focus-in {
-    100% {
-        filter: blur(0px);
-        opacity: 1;
-    }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }

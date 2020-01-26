@@ -9,9 +9,6 @@
 
 // COMPONENTS
 @import "./components/scrollUp";
-// @import "./plugins/remodal";
-// @import "./plugins/remodal-customize";
-
 @import "./sections/about";
 
 // HACKS
@@ -119,11 +116,5 @@
         fill: #000;
       }
     }
-  }
-}
-
-.photo {
-  &__img {
-    max-height: 800px;
   }
 }
