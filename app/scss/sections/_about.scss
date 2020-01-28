@@ -20,6 +20,7 @@
   &__text {
     padding: 20px 0;
     font-size: rem(20);
+    line-height: 1.75;
 
     @media (max-width: $note) {
       font-size: rem(18);

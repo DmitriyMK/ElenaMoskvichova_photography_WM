@@ -169,6 +169,48 @@
 					<p class="greating__text">Describe photoplace</p>
 				</div>
 			</article>
+
+			{# 8 #}
+			<article class="greating__row">
+				<div class="greating__content">
+					<h2 class="greating__title">Photosession #8</h2>
+
+					<p class="greating__text">Describe photoplace</p>
+				</div>
+
+				<div class="greating__photo">
+
+					<figure class="photo__item">
+						<a class="photo__link" href="./page8.html">
+							<picture>
+								<source type="image/webp" srcset="./img/8.jpg">
+								<source type="image/jpg" srcset="./img/8.webp">
+								<img class="photo__img js-webgl-image" alt src="./img/8.jpg" role="presentation">
+							</picture>
+						</a>
+					</figure>
+				</div>
+			</article>
+
+			{# 9 #}
+			<article class="greating__row">
+				<div class="greating__photo">
+					<figure class="photo__item ">
+						<a class="photo__link" href="./page9.html">
+							<picture>
+								<source type="image/webp" srcset="./img/9.jpg">
+								<source type="image/jpg" srcset="./img/9.webp">
+								<img class="photo__img js-webgl-image" alt src="./img/9.jpg" role="presentation">
+							</picture>
+						</a>
+					</figure>
+				</div>
+
+				<div class="greating__content">
+					<h2 class="greating__title">Photosession #9 </h2>
+					<p class="greating__text">Describe photoplace</p>
+				</div>
+			</article>
 		</div>
 	</section>
 

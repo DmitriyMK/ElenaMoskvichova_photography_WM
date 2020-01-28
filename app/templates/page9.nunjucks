@@ -1,0 +1,177 @@
+{% include "templateStart.nunjucks" %}
+
+<div id="trigger"></div>
+<main class="main content" id="wrapper">
+	<div>
+
+		{% include "headerInner.nunjucks" %}
+
+		<section class="photoInner">
+			<div class="wrapper">
+				<h2 class="offscreen">Photo</h2>
+
+				<div class="photoInner__box">
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/1.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/1.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/1.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/2.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/2.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/2.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/3.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/3.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/3.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/4.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/4.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/4.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/5.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/5.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/5.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/6.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/6.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/6.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/7.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/7.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/7.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/8.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/8.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/8.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/9.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/9.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/9.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/10.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/10.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/10.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/11.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/11.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/11.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/12.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/12.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/12.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/13.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/13.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/13.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/14.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/14.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/14.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/15.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/15.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/15.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/16.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/16.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/16.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/17.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/17.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/17.jpg" role="presentation">
+						</picture>
+					</figure>
+
+					<figure class="photoInner__item">
+						<picture>
+							<source type="image/webp" srcset="./img/photo/09/18.jpg">
+							<source type="image/jpg" srcset="./img/photo/09/18.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/09/18.jpg" role="presentation">
+						</picture>
+					</figure>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+
+{% include "footer.nunjucks" %}
+
+<link rel="stylesheet" href="./css/main.min.css">
+
+<script src="./js/libs/jquery-3.3.1.min.js"></script>
+<script src="./js/libs/TweenMax.min.js"></script>
+<script src="./js/libs/simpleParallax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script src="./js/libs/svgxuse.min.js"></script>
+
+<script src="./js/script.min.js"></script>
+<script src="./js/script.js"></script>
+{% include "templateEnd.nunjucks" %}

@@ -7,25 +7,25 @@
             </a>
 
             <div class="contact">
-                <a href="tel:+380664003496">+38 066 400 34 96</a>
+                <a href="tel:+380669011963">+38 066 901 19 63</a>
 
                 <ul class="smm">
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ main.web_insta }}" target="_blank" rel="noopener noreferrer">
                             <svg>
                                 <use xlink:href="../img/icons/sprite/sprite.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ main.web_fb }}" target="_blank" rel="noopener noreferrer">
                             <svg>
                                 <use xlink:href="../img/icons/sprite/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ main.web_tg }}" target="_blank" rel="noopener noreferrer">
                             <svg>
                                 <use xlink:href="../img/icons/sprite/sprite.svg#telegram"></use>
                             </svg>
@@ -38,8 +38,10 @@
 
         <div class="header__img">
             <picture>
-                <source type="image/webp" srcset="./img/hero.jpg">
-                <source type="image/jpg" srcset="./img/hero.webp">
+                <source media="(max-width: 768px)" type="image/webp" srcset="./img/hero-sm.jpg">
+                <source media="(max-width: 768px)" type="image/jpg" srcset="./img/hero-sm.webp">
+                <source media="(min-width: 769px)" type="image/webp" srcset="./img/hero.jpg">
+                <source media="(min-width: 769px)" type="image/jpg" srcset="./img/hero.webp">
                 <img class="header__picture" src="./img/hero.jpg" alt role="presentation">
             </picture>
         </div>
