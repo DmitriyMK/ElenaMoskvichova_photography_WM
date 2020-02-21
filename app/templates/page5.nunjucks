@@ -157,9 +157,9 @@
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/05/16.jpg">
-							<source type="image/jpg" srcset="./img/photo/05/16.webp">
-							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/16.jpg" role="presentation">
+							<source type="image/webp" srcset="./img/photo/05/016.jpg">
+							<source type="image/jpg" srcset="./img/photo/05/016.webp">
+							<img class="photoInner__img photo__img-small" alt src="./img/photo/05/016.jpg" role="presentation">
 						</picture>
 					</figure>
 
