@@ -43,6 +43,7 @@
 }
 .js-webgl-element-hidden {
   opacity: 0;
+  transition: 0.75s opacity ease-in;
 }
 .load-screen {
   position: fixed;
