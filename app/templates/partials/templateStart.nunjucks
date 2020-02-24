@@ -20,7 +20,7 @@
 
 		<meta name="theme-color" content="#f0f0f0">
 		<meta property="og:type" content="website"/>
-		<meta property="og:url" content="https://moskvichova.com.ua"/>
+		<meta property="og:url" content="https://wm.moskvichova.com.ua">
 		<meta property="fb:app_id" content="111157430307231"/>
 		<meta property="og:title" content="{{ main.web_title }}"/>
 		<meta property="og:description" content="{{ main.web_description }}"/>
