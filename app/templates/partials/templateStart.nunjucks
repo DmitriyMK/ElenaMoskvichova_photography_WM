@@ -9,7 +9,7 @@
 			{{ main.web_title }}
 		</title>
 		<meta name="description" content="{{ main.web_description }}">
-		<meta name="keywords" content="woman's portrait, photo, photography, photo">
+		<meta name="keywords" content="woman's portrait, photo, photography, photo, moskvichova, love story">
 
 		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
