@@ -13,104 +13,104 @@
 				<div class="photoInner__box">
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/1.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/1.webp">
+							<source type="image/webp" srcset="./img/photo/04/1.webp">
+							<source type="image/jpg" srcset="./img/photo/04/1.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/1.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/2.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/2.webp">
+							<source type="image/webp" srcset="./img/photo/04/2.webp">
+							<source type="image/jpg" srcset="./img/photo/04/2.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/2.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/3.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/3.webp">
+							<source type="image/webp" srcset="./img/photo/04/3.webp">
+							<source type="image/jpg" srcset="./img/photo/04/3.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/3.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/4.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/4.webp">
+							<source type="image/webp" srcset="./img/photo/04/4.webp">
+							<source type="image/jpg" srcset="./img/photo/04/4.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/4.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/5.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/5.webp">
+							<source type="image/webp" srcset="./img/photo/04/5.webp">
+							<source type="image/jpg" srcset="./img/photo/04/5.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/5.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/6.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/6.webp">
+							<source type="image/webp" srcset="./img/photo/04/6.webp">
+							<source type="image/jpg" srcset="./img/photo/04/6.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/6.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/7.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/7.webp">
+							<source type="image/webp" srcset="./img/photo/04/7.webp">
+							<source type="image/jpg" srcset="./img/photo/04/7.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/7.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/8.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/8.webp">
+							<source type="image/webp" srcset="./img/photo/04/8.webp">
+							<source type="image/jpg" srcset="./img/photo/04/8.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/8.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/9.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/9.webp">
+							<source type="image/webp" srcset="./img/photo/04/9.webp">
+							<source type="image/jpg" srcset="./img/photo/04/9.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/9.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/10.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/10.webp">
+							<source type="image/webp" srcset="./img/photo/04/10.webp">
+							<source type="image/jpg" srcset="./img/photo/04/10.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/10.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/11.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/11.webp">
+							<source type="image/webp" srcset="./img/photo/04/11.webp">
+							<source type="image/jpg" srcset="./img/photo/04/11.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/11.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/12.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/12.webp">
+							<source type="image/webp" srcset="./img/photo/04/12.webp">
+							<source type="image/jpg" srcset="./img/photo/04/12.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/12.jpg" role="presentation">
 						</picture>
 					</figure>
 
 					<figure class="photoInner__item">
 						<picture>
-							<source type="image/webp" srcset="./img/photo/04/13.jpg">
-							<source type="image/jpg" srcset="./img/photo/04/13.webp">
+							<source type="image/webp" srcset="./img/photo/04/13.webp">
+							<source type="image/jpg" srcset="./img/photo/04/13.jpg">
 							<img class="photoInner__img photo__img-small" alt src="./img/photo/04/13.jpg" role="presentation">
 						</picture>
 					</figure>

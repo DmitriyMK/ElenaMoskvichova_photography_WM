@@ -38,10 +38,10 @@
 
         <div class="header__img">
             <picture>
-                <source media="(max-width: 768px)" type="image/webp" srcset="./img/hero-sm.jpg">
-                <source media="(max-width: 768px)" type="image/jpg" srcset="./img/hero-sm.webp">
-                <source media="(min-width: 769px)" type="image/webp" srcset="./img/hero.jpg">
-                <source media="(min-width: 769px)" type="image/jpg" srcset="./img/hero.webp">
+                <source media="(max-width: 768px)" type="image/webp" srcset="./img/hero-sm.webp">
+                <source media="(max-width: 768px)" type="image/jpg" srcset="./img/hero-sm.jpg">
+                <source media="(min-width: 769px)" type="image/webp" srcset="./img/hero.webp">
+                <source media="(min-width: 769px)" type="image/jpg" srcset="./img/hero.jpg">
                 <img class="header__picture" src="./img/hero.jpg" alt role="presentation">
             </picture>
         </div>
