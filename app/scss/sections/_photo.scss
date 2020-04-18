@@ -19,23 +19,21 @@
     &:nth-of-type(even) {
       margin-top: 350px;
     }
-  }
-  &__img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
 
-    &.bigH {
+    &.bigH img {
       min-height: 928px;
 
       @media (max-width: $laptop) {}
       @media (max-width: $phone-xl) {
         min-height: 516px;
       }
+
+      @media (max-width: $phone-xl) {
+        min-height: auto;
+      }
     }
 
-    &.standartH {
+    &.standartH img {
       min-height: 414px;
 
       @media (max-width: $laptop) {}
@@ -43,5 +41,11 @@
         min-height: 231px;
       }
     }
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
   }
 }
