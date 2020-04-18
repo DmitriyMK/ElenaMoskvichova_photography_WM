@@ -25,5 +25,23 @@
     max-width: 100%;
     height: auto;
     margin: 20px 0;
+
+    &.bigH {
+      min-height: 928px;
+
+      @media (max-width: $laptop) {}
+      @media (max-width: $phone-xl) {
+        min-height: 516px;
+      }
+    }
+
+    &.standartH {
+      min-height: 414px;
+
+      @media (max-width: $laptop) {}
+      @media (max-width: $phone-xl) {
+        min-height: 231px;
+      }
+    }
   }
 }

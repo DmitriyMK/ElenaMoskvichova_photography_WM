@@ -94,8 +94,12 @@
     will-change: transform;
     transition: transform 0.25s ease-out;
 
+    @media (max-width: $desktop-xl) {
+      min-height: 867px;
+    }
     @media (max-width: $tablet) {
       margin: 0 auto;
+      min-height: 435px;
     }
   }
 

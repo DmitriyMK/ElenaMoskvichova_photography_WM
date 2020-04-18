@@ -11,21 +11,21 @@
 
                 <ul class="smm">
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ main.web_insta }}" target="_blank" rel="noopener noreferrer">
                             <svg>
                                 <use xlink:href="../img/icons/sprite/sprite.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ main.web_fb }}" target="_blank" rel="noopener noreferrer">
                             <svg>
                                 <use xlink:href="../img/icons/sprite/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ main.web_tg }}s" target="_blank" rel="noopener noreferrer">
                             <svg>
                                 <use xlink:href="../img/icons/sprite/sprite.svg#telegram"></use>
                             </svg>

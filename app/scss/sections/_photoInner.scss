@@ -2,3 +2,8 @@
 @import "../helpers/_mixins";
 
 
+.photoInner {
+  &__box {
+    min-height: 100vh;
+  }
+}
