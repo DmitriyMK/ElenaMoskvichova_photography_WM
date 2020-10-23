@@ -22,12 +22,56 @@
 		<h2 class="offscreen">Photo gallery</h2>
 
 		<div class="wrapper">
+		{# 11 #}
+			<article class="greating__row">
+				<div class="greating__photo">
+					<figure class="photo__item reveal-mob bigH">
+						<a class="photo__link" href="./page11.html">
+							<picture>
+							  <source type="image/avif" srcset="./img/11.avif">
+								<source type="image/webp" srcset="./img/11.webp">
+								<source type="image/jpg" srcset="./img/11.jpg">
+								<img class="photo__img js-webgl-image " alt src="./img/11.jpg" role="presentation">
+							</picture>
+						</a>
+					</figure>
+				</div>
+
+				<div class="greating__content">
+					<h2 class="greating__title">Photosession #11 </h2>
+					<p class="greating__text">Valeri</p>
+				</div>
+			</article>
+
+
+			{# 10 #}
+			<article class="greating__row">
+				<div class="greating__content">
+					<h2 class="greating__title">Photosession #10 </h2>
+					<p class="greating__text">Natalie</p>
+				</div>
+
+				<div class="greating__photo">
+					<figure class="photo__item reveal-mob bigH">
+						<a class="photo__link" href="./page10.html">
+							<picture>
+							  <source type="image/avif" srcset="./img/10.avif">
+								<source type="image/webp" srcset="./img/10.webp">
+								<source type="image/jpg" srcset="./img/10.jpg">
+								<img class="photo__img js-webgl-image " alt src="./img/10.jpg" role="presentation">
+							</picture>
+						</a>
+					</figure>
+				</div>
+			</article>
+
 			{# 1 #}
 			<article class="greating__row">
 				<div class="greating__photo">
 					<figure class="photo__item reveal-mob bigH">
 						<a class="photo__link" href="./page1.html">
 							<picture>
+								<source type="image/avif" srcset="./img/1.avif">
 								<source type="image/webp" srcset="./img/1.webp">
 								<source type="image/jpg" srcset="./img/1.jpg">
 								<img class="photo__img js-webgl-image " alt src="./img/1.jpg" role="presentation">
@@ -55,6 +99,7 @@
 					<figure class="photo__item reveal-mob bigH">
 						<a class="photo__link" href="./page2.html">
 							<picture>
+								<source type="image/avif" srcset="./img/2.avif">
 								<source type="image/webp" srcset="./img/2.webp">
 								<source type="image/jpg" srcset="./img/2.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/2.jpg" role="presentation">
@@ -70,6 +115,7 @@
 					<figure class="photo__item reveal-mob bigH">
 						<a class="photo__link" href="./page3.html">
 							<picture>
+								<source type="image/avif" srcset="./img/3.avif">
 								<source type="image/webp" srcset="./img/3.webp">
 								<source type="image/jpg" srcset="./img/3.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/3.jpg" role="presentation">
@@ -98,6 +144,7 @@
 					<figure class="photo__item reveal-mob bigH">
 						<a class="photo__link" href="./page4.html">
 							<picture>
+								<source type="image/avif" srcset="./img/4.avif">
 								<source type="image/webp" srcset="./img/4.webp">
 								<source type="image/jpg" srcset="./img/4.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/4.jpg" role="presentation">
@@ -113,6 +160,7 @@
 					<figure class="photo__item reveal-mob standartH">
 						<a class="photo__link" href="./page5.html">
 							<picture>
+								<source type="image/avif" srcset="./img/5.avif">
 								<source type="image/webp" srcset="./img/5.webp">
 								<source type="image/jpg" srcset="./img/5.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/5.jpg" role="presentation">
@@ -140,6 +188,7 @@
 					<figure class="photo__item reveal-mob standartH">
 						<a class="photo__link" href="./page6.html">
 							<picture>
+								<source type="image/avif" srcset="./img/6.avif">
 								<source type="image/webp" srcset="./img/6.webp">
 								<source type="image/jpg" srcset="./img/6.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/6.jpg" role="presentation">
@@ -155,6 +204,7 @@
 					<figure class="photo__item reveal-mob standartH">
 						<a class="photo__link" href="./page7.html">
 							<picture>
+								<source type="image/avif" srcset="./img/7.avif">
 								<source type="image/webp" srcset="./img/7.webp">
 								<source type="image/jpg" srcset="./img/7.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/7.jpg" role="presentation">
@@ -182,6 +232,7 @@
 					<figure class="photo__item reveal-mob standartH">
 						<a class="photo__link" href="./page8.html">
 							<picture>
+								<source type="image/avif" srcset="./img/8.avif">
 								<source type="image/webp" srcset="./img/8.webp">
 								<source type="image/jpg" srcset="./img/8.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/8.jpg" role="presentation">
@@ -197,6 +248,7 @@
 					<figure class="photo__item reveal-mob bigH">
 						<a class="photo__link" href="./page9.html">
 							<picture>
+								<source type="image/avif" srcset="./img/9.avif">
 								<source type="image/webp" srcset="./img/9.webp">
 								<source type="image/jpg" srcset="./img/9.jpg">
 								<img class="photo__img js-webgl-image" alt src="./img/9.jpg" role="presentation">
